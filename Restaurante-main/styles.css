@@ -1,0 +1,3180 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@293&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Special+Elite&display=swap');
+body {
+    
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+    
+}
+
+
+.cabeçalho {
+    width: 100%;
+    font-family: "Montserrat", serif;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.logocabeçalho{
+    padding: 2px 10px ;
+}
+.iconecabeçalho{
+    padding: 0 45px;
+}
+
+.cabeçalho img {
+    max-width: 100px; /* Tamanho da imagem */
+}
+
+.menu {
+    flex-grow: 1; /* Faz o menu ocupar o espaço restante */
+    display: flex;
+    justify-content: center; /* Centraliza os itens horizontalmente */
+}
+
+.menu ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 40px; /* Espaço entre os itens */
+}
+
+.menu ul li {
+    display: flex;
+    align-items: center;
+    
+}
+
+.menu a {
+    text-decoration: none;
+    color: #000;
+    display: flex;
+    align-items: center;
+    font-size: 16px; /* Ajuste do tamanho da fonte */
+    gap: 8px; /* Espaço entre ícone e texto */
+}
+.icon {
+    
+    display: inline-block; /* Garante que o ícone fique na mesma linha do texto */
+    vertical-align: middle; /* Alinha verticalmente com o texto */
+}
+
+.icon i {
+    font-size: 24px; /* Tamanho do ícone */
+    
+}
+.txt-link {
+    display: inline-block; /* Garante que o texto fique alinhado com o ícone */
+    vertical-align: middle; /* Alinha verticalmente com o ícone */
+}
+.iconecabeçalho .icon {
+    margin-right: 2px; /* Reduz drasticamente o espaço entre o ícone e o texto */
+    padding: 0; /* Remove possíveis preenchimentos extras */
+    display: inline-block; /* Mantém os elementos na mesma linha */
+    vertical-align: middle; /* Alinha com o texto */
+}
+
+.iconecabeçalho .txt-link {
+    margin-left: 0; /* Remove qualquer margem à esquerda do texto */
+    display: inline-block; /* Garante que o texto fique ao lado do ícone */
+    vertical-align: middle; /* Alinha com o ícone */
+}
+
+header {
+    font-family: "Montserrat", serif;
+    background-color: #EBB561;
+    font-weight: 900;
+    color: white;
+    padding: 0rem;
+    text-align: center;
+}
+
+.hero {
+    background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('italia\ \(1\).png'); /* Insira o caminho da sua imagem */
+    position: relative; /* Necessário para posicionar o texto dentro do contêiner */
+    width: 100%; /* Largura total da tela */
+    height: 100vh; /* Altura total da tela */
+    background-size: cover; /* Faz a imagem cobrir toda a área */
+    background-position: center; /* Centraliza a imagem no fundo */
+    background-repeat: no-repeat; /* Evita repetição da imagem */
+    display: flex; /* Para centralizar o conteúdo */
+    flex-direction: column; /* Organiza o texto em coluna */
+    justify-content: center; /* Centraliza verticalmente */
+    align-items: center; /* Centraliza horizontalmente */
+    text-align: center; /* Centraliza o texto */
+    color: #fff; /* Texto em branco para melhor contraste */
+    padding: 20px; /* Adiciona espaço interno */
+    z-index: 1; /* Certifica que o texto aparece acima do fundo */ 
+}
+
+.hero .tituloum {
+    color: #F1EAD8;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 30px; /* Tamanho do título principal */
+    margin: 10px 0;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+/* Estilo do subtítulo */
+.hero .titulodois {
+    color: #fff;
+    font-family: "Special Elite", system-ui;
+    font-size: 43px; /* Tamanho do título principal */
+    margin: 10px 0;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+/* Contêiner da linha com as cores */
+.italian-line {
+    display: flex; /* Organiza as cores lado a lado */
+    width: 150px; /* Comprimento total da linha */
+    height: 3px; /* Altura da linha */
+    margin: 15px 0; /* Espaço ao redor da linha */
+}
+
+/* Estilos das cores individuais */
+.italian-line .green {
+    flex: 1; /* Cada cor ocupa o mesmo espaço */
+    background-color: green;
+}
+
+.italian-line .white {
+    flex: 1;
+    background-color: white;
+}
+
+.italian-line .red {
+    flex: 1;
+    background-color: red;
+}
+
+/* Estilo da descrição */
+.hero .description {
+    font-family: "Poppins", sans-serif;
+    font-size: 1rem;
+    line-height: 1.8; /* Melhora a legibilidade */
+    max-width: 800px; /* Limita a largura da descrição */
+    margin-bottom: 30px; /* Espaço abaixo do texto */
+    color: #fff;
+}
+
+/* Contêiner dos botões */
+.buttons {
+    display: flex; /* Coloca os botões lado a lado */
+    gap: 90px; /* Espaço entre os botões */
+}
+
+/* Estilo dos botões */
+.buttons .reserve .menu{
+    font-size: 1rem;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px; /* Bordas arredondadas */
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s ease-in-out; /* Suaviza as interações */
+}
+
+.buttons .reserve {
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s ease-in-out; /* Suaviza as interações */
+    border: none;
+    font-size: 1rem;
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #F1EAD8; /* Vermelho para o botão de reserva */
+    color: #9E7A41;
+}
+
+.buttons .menu {
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s ease-in-out; /* Suaviza as interações */
+    border: none;
+    font-size: 1rem;
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #2a9d8f; /* Verde para o botão de menu */
+    color: #fff;
+}
+
+/* Efeito ao passar o mouse nos botões */
+.buttons .reserve .menu:hover {
+    opacity: 0.8;
+}
+
+/* Contêiner com a caixa de informações e a imagem */
+
+.info-and-image-container {
+    background-color: #9E7A41;
+    display: flex; /* Coloca a caixa e a imagem lado a lado */
+    justify-content: center;
+    text-align: center;
+    
+    position: relative;
+    gap: 0; /* Remove qualquer espaço entre a caixa e a imagem */
+    z-index: 2;
+}
+
+
+/* Estilo do quadrado com informações */
+
+.info-box-container {
+    width: 100%; /* Faz com que a imagem ocupe toda a largura disponível */
+    padding: 30px;
+    border-radius: 10px;
+    position: relative;
+    max-width: 400px;
+    
+}
+.info-box {
+    background-color:#F1EAD8;
+    padding: 30px;
+    
+    width: 100%;
+    color: #000000;
+    text-align: left;
+    margin: 80px;
+}
+
+/* Estilo do título da caixa */
+.info-box .titulotres {
+    font-family: "Bebas Neue", sans-serif;
+    color: #9E7A41;
+    justify-content: center;
+    text-align: center;
+    font-size: 34px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+
+/* Linha colorida dentro da caixa */
+.italian-linee {
+    display: flex; /* Organiza as cores lado a lado */
+    justify-content: center; /* Centraliza as cores dentro do contêiner */
+    text-align: center;
+    width: 150px; /* Comprimento total da linha */
+    height: 3px; /* Altura da linha */
+    margin: 15px auto; /* Centraliza o contêiner horizontalmente */
+}
+
+/* Estilos das cores individuais */
+.italian-linee .green {
+    flex: 1; /* Cada cor ocupa o mesmo espaço */
+    background-color: green;
+}
+
+.italian-linee .white {
+    flex: 1;
+    background-color: white;
+}
+
+.italian-linee .red {
+    flex: 1;
+    background-color: red;
+}
+
+.tituloquatro {
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+    font-weight: 300;
+    font-size: 1.2rem;
+    padding: 15px;
+    margin-bottom: 25px;
+    
+}
+
+.schedulee {
+    text-align: center;
+    font-size: 1rem;
+    margin-top: 40px; /* Espaço superior para afastar mais o texto */
+    margin-bottom: 20px; /* Espaço adicional após o horário de atendimento */
+}
+
+.info-box p {
+    font-family: "Poppins", sans-serif;
+    font-size: 1rem;
+    margin-bottom: 0px;
+}
+
+/* Estilo da imagem ao lado */
+.image-box {
+    width: 100%; /* Faz com que a imagem ocupe toda a largura disponível */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:  5%;
+    margin-top: 16%;
+    text-align: center; /* Alinha a imagem ao centro */
+   
+}
+
+/* Estilo da imagem */
+.image-box img {
+    width: 100%;
+    height: auto;
+    
+}
+
+.imagem{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-color: #4D3B1F;
+}
+
+.imgs{
+    padding: 60px 20px;  
+    width: 100%;
+}
+
+.heros {
+    background-color:#EBB561 ;
+
+    position: relative; /* Necessário para posicionar o texto dentro do contêiner */
+    background-position: center; /* Centraliza a imagem no fundo */
+    background-repeat: no-repeat; /* Evita repetição da imagem */
+    display: flex; /* Para centralizar o conteúdo */
+    flex-direction: column; /* Organiza o texto em coluna */
+    justify-content: center; /* Centraliza verticalmente */
+    align-items: center; /* Centraliza horizontalmente */
+    text-align: center; /* Centraliza o texto */
+    color: #fff; /* Texto em branco para melhor contraste */
+    padding: 20px; /* Adiciona espaço interno */
+    z-index: 1; /* Certifica que o texto aparece acima do fundo */ 
+}
+
+.ultimaimagem{
+    background-color: #EBB561;
+}
+.ultimaimg{
+    filter: brightness(50%); /* Ajusta o brilho, 0% é preto total, 100% é brilho normal */
+    display: block;
+    margin: 10px auto; /* Centraliza a imagem horizontalmente */
+    max-width: 100%; /* Garante que a imagem se ajuste ao tamanho da tela */
+    height: auto; /* Mantém a proporção da imagem */
+}
+
+.ultimaimagem {
+    position: relative; /* Torna o contêiner o ponto de referência para o posicionamento absoluto */
+    width: 100%; /* Ajusta a largura do contêiner (ou defina uma largura fixa) */
+}
+
+.ultimaimagem .ultimaimg{
+    width: 100%; /* Ajusta a imagem ao tamanho do contêiner */
+    filter: brightness(50%); /* Escurece a imagem */
+}
+
+.texto-sobre-imagem {
+    position: absolute; /* Permite que o texto seja posicionado em cima da imagem */
+    top: 50%; /* Posiciona o texto no meio da imagem (ajuste conforme necessário) */
+    left: 50%; /* Posiciona o texto no centro horizontal */
+    transform: translate(-50%, -50%); /* Ajusta para o centro exato da imagem */
+    color: white; /* Cor do texto */
+   
+}
+
+.logoultimo{
+    top: 15%; /* Posiciona o texto no meio da imagem (ajuste conforme necessário) */
+    left: 50%; /* Posiciona o texto no centro horizontal */
+    transform: translate(-50%, -50%); /* Ajusta para o centro exato da imagem */
+    max-width: 200px; /* Tamanho máximo do logo */
+    margin-bottom: 150px; /* Espaçamento entre o logo e o texto */
+    position: absolute; /* Permite que o texto seja posicionado em cima da imagem */
+    
+    text-align: center;
+    justify-content: center;
+    
+}
+
+.ultimotexto {
+    font-size: 20px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: 2%; /* Remove as margens para um layout mais compacto */
+    font-family: "Poppins", sans-serif;
+    top: 55%;
+    top: 35%; /* Posiciona o texto no meio da imagem (ajuste conforme necessário)*/
+        position: absolute; /* Permite que o texto seja posicionado em cima da imagem */
+   
+}
+
+.italiann-line {
+    top: 90%;
+    position: absolute; /* Permite que o texto seja posicionado em cima da imagem */
+    display: flex; /* Organiza as cores lado a lado */
+    text-align: center;
+    width: 965px; /* Comprimento total da linha */
+    height: 3px; /* Altura da linha */
+    margin: 15px auto; /* Centraliza o contêiner horizontalmente */
+}
+
+/* Estilos das cores individuais */
+.italiann-line .green {
+    flex: 1; /* Cada cor ocupa o mesmo espaço */
+    background-color: green;
+}
+
+.italiann-line .white {
+    flex: 1;
+    background-color: white;
+}
+
+.italiann-line .red {
+    flex: 1;
+    background-color: red;
+}
+
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #EBB561;
+    color: white;
+}
+
+.logofooter{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/*responsividade*/
+
+@media screen and (max-width:360px) {
+
+    .info-and-image-container {
+        margin-top: 0px; /* Espaçamento entre a caixa e a imagem */
+        margin: 0 auto; /* Centraliza o contêiner na página */
+        padding: 0; /* Remove espaçamento interno adicional */
+        flex-direction: column; /* Coloca os itens em coluna */
+        background-color: #9E7A41;
+        display: flex; /* Coloca a caixa e a imagem lado a lado */
+        justify-content: center;
+        text-align: center;
+        gap: 0; /* Remove qualquer espaço entre a caixa e a imagem */
+        z-index: 2;
+    }
+
+    .info-and-image-container img {
+        margin: 0 auto; /* Centraliza o contêiner na página */
+        padding: 0; /* Remove espaçamento interno adicional */
+        margin-top: 0px; /* Espaçamento entre a caixa e a imagem */
+        width: 80%; /* Largura adaptativa */
+        max-width: 500px; /* Largura máxima da imagem */
+        height: auto; /* Mantém a proporção da imagem */
+        
+    }
+    
+    
+    /* Estilo do quadrado com informações */
+    
+    .info-box-container {
+        align-items: center;
+        margin: 0 auto; /* Centraliza horizontalmente */
+        margin-top: 0px; /* Espaçamento entre a caixa e a imagem */
+       justify-content: center;
+       text-align: center;
+        border-radius: 5px;
+        width: 300px; /* Reduz a largura da caixa */
+        
+    }
+    .info-box {
+        align-items: center;
+        margin-top: 0px; /* Espaçamento entre a caixa e a imagem */
+        background-color:#F1EAD8;
+        padding: 10px;
+        width: 100%;
+        color: #000000;
+        
+        
+    }
+    
+    /* Estilo do título da caixa */
+    .info-box .titulotres {
+        font-family: "Bebas Neue", sans-serif;
+        color: #9E7A41;
+        justify-content: center;
+        text-align: center;
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 0px;
+    }
+    
+    
+    /* Linha colorida dentro da caixa */
+    .italian-linee {
+        display: flex; /* Organiza as cores lado a lado */
+        justify-content: center; /* Centraliza as cores dentro do contêiner */
+        text-align: center;
+        width: 190px; /* Comprimento total da linha */
+        height: 3px; /* Altura da linha */
+        margin: 15px auto; /* Centraliza o contêiner horizontalmente */
+    }
+    
+    /* Estilos das cores individuais */
+    .italian-linee .green {
+        flex: 1; /* Cada cor ocupa o mesmo espaço */
+        background-color: green;
+    }
+    
+    .italian-linee .white {
+        flex: 1;
+        background-color: white;
+    }
+    
+    .italian-linee .red {
+        flex: 1;
+        background-color: red;
+    }
+    
+    .tituloquatro {
+        font-family: "Poppins", sans-serif;
+        text-align: center;
+        font-weight: 300;
+        font-size: 1.2rem;
+        padding: 10px;
+        
+        
+    }
+    
+    .schedulee {
+        text-align: center;
+        font-size: 1rem;
+        margin-top: 20px; /* Espaço superior para afastar mais o texto */
+        margin-bottom: 10px; /* Espaço adicional após o horário de atendimento */
+    }
+    
+    .info-box p {
+        font-family: "Poppins", sans-serif;
+        font-size: 1rem;
+        margin-bottom: 0px;
+    }
+    
+    /* Estilo da imagem ao lado */
+    .image-box {
+        width: 100%; /* Faz com que a imagem ocupe toda a largura disponível */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center; /* Alinha a imagem ao centro */
+        margin-top: 0px; /* Espaçamento entre a caixa e a imagem */
+       
+    }
+    
+    /* Estilo da imagem */
+    .image-box img {
+        width: 100%;
+        height: auto;
+        margin-top: 0px; /* Espaçamento entre a caixa e a imagem */
+        
+    }
+
+    .ultimotexto {
+        display: flex;
+        max-width: 1000%; /* Restringe a largura do texto para forçar quebras suaves */
+        margin: 0 auto; /* Centraliza o parágrafo na página */
+        
+        word-wrap: break-word; /* Garante que palavras longas sejam quebradas */
+        white-space: pre-line; /* Preserva as quebras de linha no texto */
+        line-height: 1.6; /* Ajusta o espaçamento entre as linhas para melhor legibilidade */
+        font-size: 10px;
+        margin: 0; /* Remove as margens para um layout mais compacto */
+        font-family: "Poppins", sans-serif;
+        margin-top: 10%;
+        top: 15%; /* Posiciona o texto no meio da imagem (ajuste conforme necessário)*/
+        position: absolute; /* Permite que o texto seja posicionado em cima da imagem */
+    }
+    
+.logoultimo{
+    top: 20%; /* Posiciona o texto no meio da imagem (ajuste conforme necessário) */
+    left: 50%; /* Posiciona o texto no centro horizontal */
+    transform: translate(-50%, -50%); /* Ajusta para o centro exato da imagem */
+    max-width: 50px; /* Tamanho máximo do logo */
+    margin-bottom: 150px; /* Espaçamento entre o logo e o texto */
+    position: absolute; /* Permite que o texto seja posicionado em cima da imagem */
+    
+    text-align: center;
+    justify-content: center;
+    
+}
+
+    .ultimaimg{
+       
+        filter: brightness(50%); /* Ajusta o brilho, 0% é preto total, 100% é brilho normal */
+        display: flex;
+        margin: 10px auto; /* Centraliza a imagem horizontalmente */
+        max-width: 100%; /* Garante que a imagem se ajuste ao tamanho da tela */
+        height: auto; /* Mantém a proporção da imagem */
+    }
+    
+    .ultimaimagem {
+        position: relative; /* Torna o contêiner o ponto de referência para o posicionamento absoluto */
+        width: 100%; /* Ajusta a largura do contêiner (ou defina uma largura fixa) */
+    }
+
+    .italiann-line {
+        top: 77%;
+        position: absolute; /* Permite que o texto seja posicionado em cima da imagem */
+        display: flex; /* Organiza as cores lado a lado */
+        text-align: center;
+        width: 315px; /* Comprimento total da linha */
+        height: 3px; /* Altura da linha */
+        margin: 15px auto; /* Centraliza o contêiner horizontalmente */
+    }
+    
+    /* Estilos das cores individuais */
+    .italiann-line .green {
+        flex: 1; /* Cada cor ocupa o mesmo espaço */
+        background-color: green;
+    }
+    
+    .italiann-line .white {
+        flex: 1;
+        background-color: white;
+    }
+    
+    .italiann-line .red {
+        flex: 1;
+        background-color: red;
+    }
+}
+
+@media screen and (max-width:393px) {
+
+    .info-and-image-container {
+        margin-top: 0px; /* Espaçamento entre a caixa e a imagem */
+        margin: 0 auto; /* Centraliza o contêiner na página */
+        padding: 0; /* Remove espaçamento interno adicional */
+        flex-direction: column; /* Coloca os itens em coluna */
+        background-color: #9E7A41;
+        display: flex; /* Coloca a caixa e a imagem lado a lado */
+        justify-content: center;
+        text-align: center;
+        gap: 0; /* Remove qualquer espaço entre a caixa e a imagem */
+        z-index: 2;
+    }
+
+    .info-and-image-container img {
+        margin: 0 auto; /* Centraliza o contêiner na página */
+        padding: 0; /* Remove espaçamento interno adicional */
+        margin-top: 0px; /* Espaçamento entre a caixa e a imagem */
+        width: 80%; /* Largura adaptativa */
+        max-width: 500px; /* Largura máxima da imagem */
+        height: auto; /* Mantém a proporção da imagem */
+        
+    }
+    
+    
+    /* Estilo do quadrado com informações */
+    
+    .info-box-container {
+        margin: 0 auto; /* Centraliza horizontalmente */
+        margin-top: 0px; /* Espaçamento entre a caixa e a imagem */
+       justify-content: center;
+       text-align: center;
+        border-radius: 5px;
+        width: 300px; /* Reduz a largura da caixa */
+        
+    }
+    .info-box {
+        margin-top: 0px; /* Espaçamento entre a caixa e a imagem */
+        background-color:#F1EAD8;
+        padding: 10px;
+        width: 100%;
+        color: #000000;
+       
+        
+    }
+    
+    /* Estilo do título da caixa */
+    .info-box .titulotres {
+        font-family: "Bebas Neue", sans-serif;
+        color: #9E7A41;
+        justify-content: center;
+        text-align: center;
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 0px;
+    }
+    
+    
+    /* Linha colorida dentro da caixa */
+    .italian-linee {
+        display: flex; /* Organiza as cores lado a lado */
+        justify-content: center; /* Centraliza as cores dentro do contêiner */
+        text-align: center;
+        width: 190px; /* Comprimento total da linha */
+        height: 3px; /* Altura da linha */
+        margin: 15px auto; /* Centraliza o contêiner horizontalmente */
+    }
+    
+    /* Estilos das cores individuais */
+    .italian-linee .green {
+        flex: 1; /* Cada cor ocupa o mesmo espaço */
+        background-color: green;
+    }
+    
+    .italian-linee .white {
+        flex: 1;
+        background-color: white;
+    }
+    
+    .italian-linee .red {
+        flex: 1;
+        background-color: red;
+    }
+    
+    .tituloquatro {
+        font-family: "Poppins", sans-serif;
+        text-align: center;
+        font-weight: 300;
+        font-size: 1.2rem;
+        padding: 10px;
+        
+        
+    }
+    
+    .schedulee {
+        text-align: center;
+        font-size: 1rem;
+        margin-top: 20px; /* Espaço superior para afastar mais o texto */
+        margin-bottom: 10px; /* Espaço adicional após o horário de atendimento */
+    }
+    
+    .info-box p {
+        font-family: "Poppins", sans-serif;
+        font-size: 1rem;
+        margin-bottom: 0px;
+    }
+    
+    /* Estilo da imagem ao lado */
+    .image-box {
+        width: 100%; /* Faz com que a imagem ocupe toda a largura disponível */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center; /* Alinha a imagem ao centro */
+        margin-top: 0px; /* Espaçamento entre a caixa e a imagem */
+       
+    }
+    
+    /* Estilo da imagem */
+    .image-box img {
+        width: 100%;
+        height: auto;
+        margin-top: 0px; /* Espaçamento entre a caixa e a imagem */
+        
+    }
+
+    .ultimotexto {
+        display: flex;
+        max-width: 1000%; /* Restringe a largura do texto para forçar quebras suaves */
+        margin: 0 auto; /* Centraliza o parágrafo na página */
+        
+        word-wrap: break-word; /* Garante que palavras longas sejam quebradas */
+        white-space: pre-line; /* Preserva as quebras de linha no texto */
+        line-height: 1.6; /* Ajusta o espaçamento entre as linhas para melhor legibilidade */
+        font-size: 10px;
+        margin: 0; /* Remove as margens para um layout mais compacto */
+        font-family: "Poppins", sans-serif;
+        margin-top: 10%;
+        top: 15%; /* Posiciona o texto no meio da imagem (ajuste conforme necessário)*/
+        position: absolute; /* Permite que o texto seja posicionado em cima da imagem */
+    }
+    
+.logoultimo{
+    top: 20%; /* Posiciona o texto no meio da imagem (ajuste conforme necessário) */
+    left: 50%; /* Posiciona o texto no centro horizontal */
+    transform: translate(-50%, -50%); /* Ajusta para o centro exato da imagem */
+    max-width: 50px; /* Tamanho máximo do logo */
+    margin-bottom: 150px; /* Espaçamento entre o logo e o texto */
+    position: absolute; /* Permite que o texto seja posicionado em cima da imagem */
+    
+    text-align: center;
+    justify-content: center;
+    
+}
+
+    .ultimaimg{
+       
+        filter: brightness(50%); /* Ajusta o brilho, 0% é preto total, 100% é brilho normal */
+        display: flex;
+        margin: 10px auto; /* Centraliza a imagem horizontalmente */
+        max-width: 100%; /* Garante que a imagem se ajuste ao tamanho da tela */
+        height: auto; /* Mantém a proporção da imagem */
+    }
+    
+    .ultimaimagem {
+        position: relative; /* Torna o contêiner o ponto de referência para o posicionamento absoluto */
+        width: 100%; /* Ajusta a largura do contêiner (ou defina uma largura fixa) */
+    }
+
+    .italiann-line {
+        top: 77%;
+        position: absolute; /* Permite que o texto seja posicionado em cima da imagem */
+        display: flex; /* Organiza as cores lado a lado */
+        text-align: center;
+        width: 315px; /* Comprimento total da linha */
+        height: 3px; /* Altura da linha */
+        margin: 15px auto; /* Centraliza o contêiner horizontalmente */
+    }
+    
+    /* Estilos das cores individuais */
+    .italiann-line .green {
+        flex: 1; /* Cada cor ocupa o mesmo espaço */
+        background-color: green;
+    }
+    
+    .italiann-line .white {
+        flex: 1;
+        background-color: white;
+    }
+    
+    .italiann-line .red {
+        flex: 1;
+        background-color: red;
+    }
+}
+
+@media screen and (max-width:412px) {
+
+    .info-and-image-container {
+        margin-top: 0px; /* Espaçamento entre a caixa e a imagem */
+        margin: 0 auto; /* Centraliza o contêiner na página */
+        padding: 0; /* Remove espaçamento interno adicional */
+        flex-direction: column; /* Coloca os itens em coluna */
+        background-color: #9E7A41;
+        display: flex; /* Coloca a caixa e a imagem lado a lado */
+        justify-content: center;
+        text-align: center;
+        gap: 0; /* Remove qualquer espaço entre a caixa e a imagem */
+        z-index: 2;
+    }
+
+    .info-and-image-container img {
+        margin: 0 auto; /* Centraliza o contêiner na página */
+        padding: 0; /* Remove espaçamento interno adicional */
+        margin-top: 0px; /* Espaçamento entre a caixa e a imagem */
+        width: 80%; /* Largura adaptativa */
+        max-width: 500px; /* Largura máxima da imagem */
+        height: auto; /* Mantém a proporção da imagem */
+        
+    }
+    
+    
+    /* Estilo do quadrado com informações */
+    
+    .info-box-container {
+        margin: 0 auto; /* Centraliza horizontalmente */
+        margin-top: 0px; /* Espaçamento entre a caixa e a imagem */
+       justify-content: center;
+       text-align: center;
+        border-radius: 5px;
+        width: 300px; /* Reduz a largura da caixa */
+        
+    }
+    .info-box {
+        margin-top: 0px; /* Espaçamento entre a caixa e a imagem */
+        background-color:#F1EAD8;
+        padding: 10px;
+        width: 100%;
+        color: #000000;
+        
+        
+    }
+    
+    /* Estilo do título da caixa */
+    .info-box .titulotres {
+        font-family: "Bebas Neue", sans-serif;
+        color: #9E7A41;
+        justify-content: center;
+        text-align: center;
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 0px;
+    }
+    
+    
+    /* Linha colorida dentro da caixa */
+    .italian-linee {
+        display: flex; /* Organiza as cores lado a lado */
+        justify-content: center; /* Centraliza as cores dentro do contêiner */
+        text-align: center;
+        width: 190px; /* Comprimento total da linha */
+        height: 3px; /* Altura da linha */
+        margin: 15px auto; /* Centraliza o contêiner horizontalmente */
+    }
+    
+    /* Estilos das cores individuais */
+    .italian-linee .green {
+        flex: 1; /* Cada cor ocupa o mesmo espaço */
+        background-color: green;
+    }
+    
+    .italian-linee .white {
+        flex: 1;
+        background-color: white;
+    }
+    
+    .italian-linee .red {
+        flex: 1;
+        background-color: red;
+    }
+    
+    .tituloquatro {
+        font-family: "Poppins", sans-serif;
+        text-align: center;
+        font-weight: 300;
+        font-size: 1.2rem;
+        padding: 10px;
+        
+        
+    }
+    
+    .schedulee {
+        text-align: center;
+        font-size: 1rem;
+        margin-top: 20px; /* Espaço superior para afastar mais o texto */
+        margin-bottom: 10px; /* Espaço adicional após o horário de atendimento */
+    }
+    
+    .info-box p {
+        font-family: "Poppins", sans-serif;
+        font-size: 1rem;
+        margin-bottom: 0px;
+    }
+    
+    /* Estilo da imagem ao lado */
+    .image-box {
+        width: 100%; /* Faz com que a imagem ocupe toda a largura disponível */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center; /* Alinha a imagem ao centro */
+        margin-top: 0px; /* Espaçamento entre a caixa e a imagem */
+       
+    }
+    
+    /* Estilo da imagem */
+    .image-box img {
+        width: 100%;
+        height: auto;
+        margin-top: 0px; /* Espaçamento entre a caixa e a imagem */
+        
+    }
+
+    .ultimotexto {
+        display: flex;
+        max-width: 1000%; /* Restringe a largura do texto para forçar quebras suaves */
+        margin: 0 auto; /* Centraliza o parágrafo na página */
+        
+        word-wrap: break-word; /* Garante que palavras longas sejam quebradas */
+        white-space: pre-line; /* Preserva as quebras de linha no texto */
+        line-height: 1.6; /* Ajusta o espaçamento entre as linhas para melhor legibilidade */
+        font-size: 10px;
+        margin: 0; /* Remove as margens para um layout mais compacto */
+        font-family: "Poppins", sans-serif;
+        margin-top: 10%;
+        top: 15%; /* Posiciona o texto no meio da imagem (ajuste conforme necessário)*/
+        position: absolute; /* Permite que o texto seja posicionado em cima da imagem */
+    }
+    
+.logoultimo{
+    top: 20%; /* Posiciona o texto no meio da imagem (ajuste conforme necessário) */
+    left: 50%; /* Posiciona o texto no centro horizontal */
+    transform: translate(-50%, -50%); /* Ajusta para o centro exato da imagem */
+    max-width: 50px; /* Tamanho máximo do logo */
+    margin-bottom: 150px; /* Espaçamento entre o logo e o texto */
+    position: absolute; /* Permite que o texto seja posicionado em cima da imagem */
+    
+    text-align: center;
+    justify-content: center;
+    
+}
+
+    .ultimaimg{
+       
+        filter: brightness(50%); /* Ajusta o brilho, 0% é preto total, 100% é brilho normal */
+        display: flex;
+        margin: 10px auto; /* Centraliza a imagem horizontalmente */
+        max-width: 100%; /* Garante que a imagem se ajuste ao tamanho da tela */
+        height: auto; /* Mantém a proporção da imagem */
+    }
+    
+    .ultimaimagem {
+        position: relative; /* Torna o contêiner o ponto de referência para o posicionamento absoluto */
+        width: 100%; /* Ajusta a largura do contêiner (ou defina uma largura fixa) */
+    }
+
+    .italiann-line {
+        top: 77%;
+        position: absolute; /* Permite que o texto seja posicionado em cima da imagem */
+        display: flex; /* Organiza as cores lado a lado */
+        text-align: center;
+        width: 315px; /* Comprimento total da linha */
+        height: 3px; /* Altura da linha */
+        margin: 15px auto; /* Centraliza o contêiner horizontalmente */
+    }
+    
+    /* Estilos das cores individuais */
+    .italiann-line .green {
+        flex: 1; /* Cada cor ocupa o mesmo espaço */
+        background-color: green;
+    }
+    
+    .italiann-line .white {
+        flex: 1;
+        background-color: white;
+    }
+    
+    .italiann-line .red {
+        flex: 1;
+        background-color: red;
+    }
+}
+
+@media screen and (max-width:440px) {
+
+    .info-and-image-container {
+        margin-top: 0px; /* Espaçamento entre a caixa e a imagem */
+        margin: 0 auto; /* Centraliza o contêiner na página */
+        padding: 0; /* Remove espaçamento interno adicional */
+        flex-direction: column; /* Coloca os itens em coluna */
+        background-color: #9E7A41;
+        display: flex; /* Coloca a caixa e a imagem lado a lado */
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        gap: 0; /* Remove qualquer espaço entre a caixa e a imagem */
+        z-index: 2;
+        margin: 0 auto; /* Centraliza o contêiner na página */
+    }
+
+    .info-and-image-container img {
+        margin: 0 auto; /* Centraliza o contêiner na página */
+        padding: 0; /* Remove espaçamento interno adicional */
+        margin-top: 0px; /* Espaçamento entre a caixa e a imagem */
+        width: 80%; /* Largura adaptativa */
+        max-width: 500px; /* Largura máxima da imagem */
+        height: auto; /* Mantém a proporção da imagem */
+        
+    }
+    
+    
+    /* Estilo do quadrado com informações */
+    
+    .info-box-container {
+        margin: 0 auto; /* Centraliza o contêiner na página */
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto; /* Centraliza horizontalmente */
+        margin-top: 0px; /* Espaçamento entre a caixa e a imagem */
+       justify-content: center;
+        width: 300px; /* Reduz a largura da caixa */
+        
+    }
+
+    .info-box {
+        margin: 0 auto; /* Centraliza o contêiner na página */
+        justify-content: center;
+        align-items: center;
+        margin-top: 0px; /* Espaçamento entre a caixa e a imagem */
+        background-color:#F1EAD8;       
+        width: 100%;
+        color: #000000;
+        text-align: center;
+    }
+    
+    /* Estilo do título da caixa */
+    .info-box .titulotres {
+        font-family: "Bebas Neue", sans-serif;
+        color: #9E7A41;
+        justify-content: center;
+        text-align: center;
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 0px;
+    }
+    
+    
+    /* Linha colorida dentro da caixa */
+    .italian-linee {
+        display: flex; /* Organiza as cores lado a lado */
+        justify-content: center; /* Centraliza as cores dentro do contêiner */
+        text-align: center;
+        width: 190px; /* Comprimento total da linha */
+        height: 3px; /* Altura da linha */
+        margin: 15px auto; /* Centraliza o contêiner horizontalmente */
+    }
+    
+    /* Estilos das cores individuais */
+    .italian-linee .green {
+        flex: 1; /* Cada cor ocupa o mesmo espaço */
+        background-color: green;
+    }
+    
+    .italian-linee .white {
+        flex: 1;
+        background-color: white;
+    }
+    
+    .italian-linee .red {
+        flex: 1;
+        background-color: red;
+    }
+    
+    .tituloquatro {
+        font-family: "Poppins", sans-serif;
+        text-align: center;
+        font-weight: 300;
+        font-size: 1.2rem;
+        padding: 10px;
+        
+        
+    }
+    
+    .schedulee {
+        text-align: center;
+        font-size: 1rem;
+        margin-top: 20px; /* Espaço superior para afastar mais o texto */
+        margin-bottom: 10px; /* Espaço adicional após o horário de atendimento */
+    }
+    
+    .info-box p {
+        font-family: "Poppins", sans-serif;
+        font-size: 1rem;
+        margin-bottom: 0px;
+    }
+    
+    /* Estilo da imagem ao lado */
+    .image-box {
+        width: 100%; /* Faz com que a imagem ocupe toda a largura disponível */
+        justify-content: center;
+        align-items: center;
+        text-align: center; /* Alinha a imagem ao centro */
+        margin-top: 0px; /* Espaçamento entre a caixa e a imagem */
+       
+    }
+    
+    /* Estilo da imagem */
+    .image-box img {
+        width: 100%;
+        height: auto;
+        margin-top: 0px; /* Espaçamento entre a caixa e a imagem */
+        
+    }
+
+    .ultimotexto {
+        display: flex;
+        max-width: 1000%; /* Restringe a largura do texto para forçar quebras suaves */
+        margin: 0 auto; /* Centraliza o parágrafo na página */
+        
+        word-wrap: break-word; /* Garante que palavras longas sejam quebradas */
+        white-space: pre-line; /* Preserva as quebras de linha no texto */
+        line-height: 1.6; /* Ajusta o espaçamento entre as linhas para melhor legibilidade */
+        font-size: 10px;
+        margin: 0; /* Remove as margens para um layout mais compacto */
+        font-family: "Poppins", sans-serif;
+        margin-top: 10%;
+        top: 15%; /* Posiciona o texto no meio da imagem (ajuste conforme necessário)*/
+        position: absolute; /* Permite que o texto seja posicionado em cima da imagem */
+    }
+    
+.logoultimo{
+    top: 20%; /* Posiciona o texto no meio da imagem (ajuste conforme necessário) */
+    left: 50%; /* Posiciona o texto no centro horizontal */
+    transform: translate(-50%, -50%); /* Ajusta para o centro exato da imagem */
+    max-width: 50px; /* Tamanho máximo do logo */
+    margin-bottom: 150px; /* Espaçamento entre o logo e o texto */
+    position: absolute; /* Permite que o texto seja posicionado em cima da imagem */
+    
+    text-align: center;
+    justify-content: center;
+    
+}
+
+    .ultimaimg{
+       
+        filter: brightness(50%); /* Ajusta o brilho, 0% é preto total, 100% é brilho normal */
+        display: flex;
+        margin: 10px auto; /* Centraliza a imagem horizontalmente */
+        max-width: 100%; /* Garante que a imagem se ajuste ao tamanho da tela */
+        height: auto; /* Mantém a proporção da imagem */
+    }
+    
+    .ultimaimagem {
+        position: relative; /* Torna o contêiner o ponto de referência para o posicionamento absoluto */
+        width: 100%; /* Ajusta a largura do contêiner (ou defina uma largura fixa) */
+    }
+
+    .italiann-line {
+        top: 77%;
+        position: absolute; /* Permite que o texto seja posicionado em cima da imagem */
+        display: flex; /* Organiza as cores lado a lado */
+        text-align: center;
+        width: 315px; /* Comprimento total da linha */
+        height: 3px; /* Altura da linha */
+        margin: 15px auto; /* Centraliza o contêiner horizontalmente */
+    }
+    
+    /* Estilos das cores individuais */
+    .italiann-line .green {
+        flex: 1; /* Cada cor ocupa o mesmo espaço */
+        background-color: green;
+    }
+    
+    .italiann-line .white {
+        flex: 1;
+        background-color: white;
+    }
+    
+    .italiann-line .red {
+        flex: 1;
+        background-color: red;
+    }
+}
+
+@media screen and (min-width:768px){
+
+    
+    .cabeçalho {
+        width: 100%;
+        font-family: "Montserrat", serif;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        
+    }
+    
+    .logocabeçalho{
+        padding: 2px 10px ;
+    }
+    .iconecabeçalho{
+        padding: 0 45px;
+    }
+    
+    .cabeçalho img {
+        max-width: 100px; /* Tamanho da imagem */
+    }
+    
+    .menu {
+        flex-grow: 1; /* Faz o menu ocupar o espaço restante */
+        display: flex;
+        justify-content: center; /* Centraliza os itens horizontalmente */
+    }
+    
+    .menu ul {
+        display: flex;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        gap: 40px; /* Espaço entre os itens */
+    }
+    
+    .menu ul li {
+        display: flex;
+        align-items: center;
+        
+    }
+    
+    .menu a {
+        text-decoration: none;
+        color: #000;
+        display: flex;
+        align-items: center;
+        font-size: 16px; /* Ajuste do tamanho da fonte */
+        gap: 8px; /* Espaço entre ícone e texto */
+    }
+    .icon {
+        
+        display: inline-block; /* Garante que o ícone fique na mesma linha do texto */
+        vertical-align: middle; /* Alinha verticalmente com o texto */
+    }
+    
+    .icon i {
+        font-size: 24px; /* Tamanho do ícone */
+        
+    }
+    .txt-link {
+        display: inline-block; /* Garante que o texto fique alinhado com o ícone */
+        vertical-align: middle; /* Alinha verticalmente com o ícone */
+    }
+    .iconecabeçalho .icon {
+        margin-right: 2px; /* Reduz drasticamente o espaço entre o ícone e o texto */
+        padding: 0; /* Remove possíveis preenchimentos extras */
+        display: inline-block; /* Mantém os elementos na mesma linha */
+        vertical-align: middle; /* Alinha com o texto */
+    }
+    
+    .iconecabeçalho .txt-link {
+        margin-left: 0; /* Remove qualquer margem à esquerda do texto */
+        display: inline-block; /* Garante que o texto fique ao lado do ícone */
+        vertical-align: middle; /* Alinha com o ícone */
+    }
+    
+    header {
+        font-family: "Montserrat", serif;
+        background-color: #EBB561;
+        font-weight: 900;
+        color: white;
+        padding: 0rem;
+        text-align: center;
+    }
+    
+    .hero {
+        background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('italia\ \(1\).png'); /* Insira o caminho da sua imagem */
+        position: relative; /* Necessário para posicionar o texto dentro do contêiner */
+        width: 100%; /* Largura total da tela */
+        height: 100vh; /* Altura total da tela */
+        background-size: cover; /* Faz a imagem cobrir toda a área */
+        background-position: center; /* Centraliza a imagem no fundo */
+        background-repeat: no-repeat; /* Evita repetição da imagem */
+        display: flex; /* Para centralizar o conteúdo */
+        flex-direction: column; /* Organiza o texto em coluna */
+        justify-content: center; /* Centraliza verticalmente */
+        align-items: center; /* Centraliza horizontalmente */
+        text-align: center; /* Centraliza o texto */
+        color: #fff; /* Texto em branco para melhor contraste */
+        padding: 20px; /* Adiciona espaço interno */
+        z-index: 1; /* Certifica que o texto aparece acima do fundo */ 
+    }
+    
+    .hero .tituloum {
+        color: #F1EAD8;
+        font-family: "Bebas Neue", sans-serif;
+        font-size: 30px; /* Tamanho do título principal */
+        margin: 10px 0;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+    
+    /* Estilo do subtítulo */
+    .hero .titulodois {
+        color: #fff;
+        font-family: "Special Elite", system-ui;
+        font-size: 43px; /* Tamanho do título principal */
+        margin: 10px 0;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+    
+    /* Contêiner da linha com as cores */
+    .italian-line {
+        display: flex; /* Organiza as cores lado a lado */
+        width: 150px; /* Comprimento total da linha */
+        height: 3px; /* Altura da linha */
+        margin: 15px 0; /* Espaço ao redor da linha */
+    }
+    
+    /* Estilos das cores individuais */
+    .italian-line .green {
+        flex: 1; /* Cada cor ocupa o mesmo espaço */
+        background-color: green;
+    }
+    
+    .italian-line .white {
+        flex: 1;
+        background-color: white;
+    }
+    
+    .italian-line .red {
+        flex: 1;
+        background-color: red;
+    }
+    
+    /* Estilo da descrição */
+    .hero .description {
+        font-family: "Poppins", sans-serif;
+        font-size: 1.5rem;
+        
+        max-width: 800px; /* Limita a largura da descrição */
+        margin-bottom: 30px; /* Espaço abaixo do texto */
+        color: #fff;
+    }
+    
+    /* Contêiner dos botões */
+    .buttons {
+        display: flex; /* Coloca os botões lado a lado */
+        gap: 90px; /* Espaço entre os botões */
+    }
+    
+    /* Estilo dos botões */
+    .buttons .reserve .menu{
+        font-size: 1rem;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px; /* Bordas arredondadas */
+        cursor: pointer;
+        font-weight: bold;
+        transition: 0.3s ease-in-out; /* Suaviza as interações */
+    }
+    
+    .buttons .reserve {
+        cursor: pointer;
+        font-weight: bold;
+        transition: 0.3s ease-in-out; /* Suaviza as interações */
+        border: none;
+        font-size: 1rem;
+        padding: 10px 20px;
+        border-radius: 5px;
+        display: flex;
+        text-decoration: none;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        background-color: #F1EAD8; /* Vermelho para o botão de reserva */
+        color: #9E7A41;
+    }
+    
+    .buttons .menu {
+        cursor: pointer;
+        font-weight: bold;
+        transition: 0.3s ease-in-out; /* Suaviza as interações */
+        border: none;
+        font-size: 1rem;
+        padding: 10px 20px;
+        border-radius: 5px;
+        display: flex;
+        text-decoration: none;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        background-color: #2a9d8f; /* Verde para o botão de menu */
+        color: #fff;
+    }
+    
+    /* Efeito ao passar o mouse nos botões */
+    .buttons .reserve .menu:hover {
+        opacity: 0.8;
+    }
+    
+    /* Contêiner com a caixa de informações e a imagem */
+    
+    .info-and-image-container {
+        background-color: #9E7A41;
+        display: flex; /* Coloca a caixa e a imagem lado a lado */
+        justify-content: center;
+        text-align: center;
+        
+        position: relative;
+        gap: 0; /* Remove qualquer espaço entre a caixa e a imagem */
+        z-index: 2;
+    }
+    
+    
+    /* Estilo do quadrado com informações */
+    
+    .info-box-container {
+        width: 100%; /* Faz com que a imagem ocupe toda a largura disponível */
+        padding: 30px;
+        border-radius: 10px;
+        position: relative;
+        max-width: 400px;
+        
+    }
+    .info-box {
+        background-color:#F1EAD8;
+        padding: 30px;
+        
+        width: 100%;
+        color: #000000;
+        text-align: left;
+        margin: 80px;
+    }
+    
+    /* Estilo do título da caixa */
+    .info-box .titulotres {
+        font-family: "Bebas Neue", sans-serif;
+        color: #9E7A41;
+        justify-content: center;
+        text-align: center;
+        font-size: 34px;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+    
+    
+    /* Linha colorida dentro da caixa */
+    .italian-linee {
+        display: flex; /* Organiza as cores lado a lado */
+        justify-content: center; /* Centraliza as cores dentro do contêiner */
+        text-align: center;
+        width: 150px; /* Comprimento total da linha */
+        height: 3px; /* Altura da linha */
+        margin: 15px auto; /* Centraliza o contêiner horizontalmente */
+    }
+    
+    /* Estilos das cores individuais */
+    .italian-linee .green {
+        flex: 1; /* Cada cor ocupa o mesmo espaço */
+        background-color: green;
+    }
+    
+    .italian-linee .white {
+        flex: 1;
+        background-color: white;
+    }
+    
+    .italian-linee .red {
+        flex: 1;
+        background-color: red;
+    }
+    
+    .tituloquatro {
+        font-family: "Poppins", sans-serif;
+        text-align: center;
+        font-weight: 300;
+        font-size: 1.2rem;
+        padding: 15px;
+        margin-bottom: 25px;
+        
+    }
+    
+    .schedulee {
+        text-align: center;
+        font-size: 1rem;
+        margin-top: 40px; /* Espaço superior para afastar mais o texto */
+        margin-bottom: 20px; /* Espaço adicional após o horário de atendimento */
+    }
+    
+    .info-box p {
+        font-family: "Poppins", sans-serif;
+        font-size: 1rem;
+        margin-bottom: 0px;
+    }
+    
+    /* Estilo da imagem ao lado */
+    .image-box {
+        width: 100%; /* Faz com que a imagem ocupe toda a largura disponível */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding:  5%;
+        margin-top: 29%;
+        text-align: center; /* Alinha a imagem ao centro */
+       
+    }
+    
+    /* Estilo da imagem */
+    .image-box img {
+        width: 100%;
+        height: auto;
+        
+    }
+    
+    .imagem{
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        background-color: #4D3B1F;
+    }
+    
+    .imgs{
+        padding: 60px 20px;  
+        width: 100%;
+    }
+    
+    .heros {
+        background-color:#EBB561 ;
+    
+        position: relative; /* Necessário para posicionar o texto dentro do contêiner */
+        background-position: center; /* Centraliza a imagem no fundo */
+        background-repeat: no-repeat; /* Evita repetição da imagem */
+        display: flex; /* Para centralizar o conteúdo */
+        flex-direction: column; /* Organiza o texto em coluna */
+        justify-content: center; /* Centraliza verticalmente */
+        align-items: center; /* Centraliza horizontalmente */
+        text-align: center; /* Centraliza o texto */
+        color: #fff; /* Texto em branco para melhor contraste */
+        padding: 20px; /* Adiciona espaço interno */
+        z-index: 1; /* Certifica que o texto aparece acima do fundo */ 
+    }
+    
+    .ultimaimagem{
+        background-color: #EBB561;
+    }
+    .ultimaimg{
+        filter: brightness(50%); /* Ajusta o brilho, 0% é preto total, 100% é brilho normal */
+        display: block;
+        margin: 10px auto; /* Centraliza a imagem horizontalmente */
+        max-width: 100%; /* Garante que a imagem se ajuste ao tamanho da tela */
+        height: auto; /* Mantém a proporção da imagem */
+    }
+    
+    .ultimaimagem {
+        position: relative; /* Torna o contêiner o ponto de referência para o posicionamento absoluto */
+        width: 100%; /* Ajusta a largura do contêiner (ou defina uma largura fixa) */
+    }
+    
+    .ultimaimagem .ultimaimg{
+        width: 100%; /* Ajusta a imagem ao tamanho do contêiner */
+        filter: brightness(50%); /* Escurece a imagem */
+    }
+    
+    .texto-sobre-imagem {
+        position: absolute; /* Permite que o texto seja posicionado em cima da imagem */
+        top: 50%; /* Posiciona o texto no meio da imagem (ajuste conforme necessário) */
+        left: 50%; /* Posiciona o texto no centro horizontal */
+        transform: translate(-50%, -50%); /* Ajusta para o centro exato da imagem */
+        color: white; /* Cor do texto */
+       
+    }
+    
+    .logoultimo{
+        top: 15%; /* Posiciona o texto no meio da imagem (ajuste conforme necessário) */
+        left: 50%; /* Posiciona o texto no centro horizontal */
+        transform: translate(-50%, -50%); /* Ajusta para o centro exato da imagem */
+        max-width: 200px; /* Tamanho máximo do logo */
+        margin-bottom: 150px; /* Espaçamento entre o logo e o texto */
+        position: absolute; /* Permite que o texto seja posicionado em cima da imagem */
+        
+        text-align: center;
+        justify-content: center;
+        
+    }
+    
+    .ultimotexto {
+        font-size: 20px;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        margin: 2%; /* Remove as margens para um layout mais compacto */
+        font-family: "Poppins", sans-serif;
+        top: 55%;
+        top: 35%; /* Posiciona o texto no meio da imagem (ajuste conforme necessário)*/
+            position: absolute; /* Permite que o texto seja posicionado em cima da imagem */
+       
+    }
+    
+    .italiann-line {
+        top: 85%;
+        position: absolute; /* Permite que o texto seja posicionado em cima da imagem */
+        display: flex; /* Organiza as cores lado a lado */
+        text-align: center;
+        width: 700px; /* Comprimento total da linha */
+        height: 3px; /* Altura da linha */
+        margin: 15px auto; /* Centraliza o contêiner horizontalmente */
+    }
+    
+    /* Estilos das cores individuais */
+    .italiann-line .green {
+        flex: 1; /* Cada cor ocupa o mesmo espaço */
+        background-color: green;
+    }
+    
+    .italiann-line .white {
+        flex: 1;
+        background-color: white;
+    }
+    
+    .italiann-line .red {
+        flex: 1;
+        background-color: red;
+    }
+    
+    
+    footer {
+        text-align: center;
+        padding: 1rem;
+        background-color: #EBB561;
+        color: white;
+    }
+    
+    .logofooter{
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+}    
+
+
+@media screen and (min-width:800px){
+
+    
+    .cabeçalho {
+        width: 100%;
+        font-family: "Montserrat", serif;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        
+    }
+    
+    .logocabeçalho{
+        padding: 2px 10px ;
+    }
+    .iconecabeçalho{
+        padding: 0 45px;
+    }
+    
+    .cabeçalho img {
+        max-width: 100px; /* Tamanho da imagem */
+    }
+    
+    .menu {
+        flex-grow: 1; /* Faz o menu ocupar o espaço restante */
+        display: flex;
+        justify-content: center; /* Centraliza os itens horizontalmente */
+    }
+    
+    .menu ul {
+        display: flex;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        gap: 40px; /* Espaço entre os itens */
+    }
+    
+    .menu ul li {
+        display: flex;
+        align-items: center;
+        
+    }
+    
+    .menu a {
+        text-decoration: none;
+        color: #000;
+        display: flex;
+        align-items: center;
+        font-size: 16px; /* Ajuste do tamanho da fonte */
+        gap: 8px; /* Espaço entre ícone e texto */
+    }
+    .icon {
+        
+        display: inline-block; /* Garante que o ícone fique na mesma linha do texto */
+        vertical-align: middle; /* Alinha verticalmente com o texto */
+    }
+    
+    .icon i {
+        font-size: 24px; /* Tamanho do ícone */
+        
+    }
+    .txt-link {
+        display: inline-block; /* Garante que o texto fique alinhado com o ícone */
+        vertical-align: middle; /* Alinha verticalmente com o ícone */
+    }
+    .iconecabeçalho .icon {
+        margin-right: 2px; /* Reduz drasticamente o espaço entre o ícone e o texto */
+        padding: 0; /* Remove possíveis preenchimentos extras */
+        display: inline-block; /* Mantém os elementos na mesma linha */
+        vertical-align: middle; /* Alinha com o texto */
+    }
+    
+    .iconecabeçalho .txt-link {
+        margin-left: 0; /* Remove qualquer margem à esquerda do texto */
+        display: inline-block; /* Garante que o texto fique ao lado do ícone */
+        vertical-align: middle; /* Alinha com o ícone */
+    }
+    
+    header {
+        font-family: "Montserrat", serif;
+        background-color: #EBB561;
+        font-weight: 900;
+        color: white;
+        padding: 0rem;
+        text-align: center;
+    }
+    
+    .hero {
+        background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('italia\ \(1\).png'); /* Insira o caminho da sua imagem */
+        position: relative; /* Necessário para posicionar o texto dentro do contêiner */
+        width: 100%; /* Largura total da tela */
+        height: 100vh; /* Altura total da tela */
+        background-size: cover; /* Faz a imagem cobrir toda a área */
+        background-position: center; /* Centraliza a imagem no fundo */
+        background-repeat: no-repeat; /* Evita repetição da imagem */
+        display: flex; /* Para centralizar o conteúdo */
+        flex-direction: column; /* Organiza o texto em coluna */
+        justify-content: center; /* Centraliza verticalmente */
+        align-items: center; /* Centraliza horizontalmente */
+        text-align: center; /* Centraliza o texto */
+        color: #fff; /* Texto em branco para melhor contraste */
+        padding: 20px; /* Adiciona espaço interno */
+        z-index: 1; /* Certifica que o texto aparece acima do fundo */ 
+    }
+    
+    .hero .tituloum {
+        color: #F1EAD8;
+        font-family: "Bebas Neue", sans-serif;
+        font-size: 30px; /* Tamanho do título principal */
+        margin: 10px 0;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+    
+    /* Estilo do subtítulo */
+    .hero .titulodois {
+        color: #fff;
+        font-family: "Special Elite", system-ui;
+        font-size: 43px; /* Tamanho do título principal */
+        margin: 10px 0;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+    
+    /* Contêiner da linha com as cores */
+    .italian-line {
+        display: flex; /* Organiza as cores lado a lado */
+        width: 150px; /* Comprimento total da linha */
+        height: 3px; /* Altura da linha */
+        margin: 15px 0; /* Espaço ao redor da linha */
+    }
+    
+    /* Estilos das cores individuais */
+    .italian-line .green {
+        flex: 1; /* Cada cor ocupa o mesmo espaço */
+        background-color: green;
+    }
+    
+    .italian-line .white {
+        flex: 1;
+        background-color: white;
+    }
+    
+    .italian-line .red {
+        flex: 1;
+        background-color: red;
+    }
+    
+    /* Estilo da descrição */
+    .hero .description {
+        font-family: "Poppins", sans-serif;
+        font-size: 1.5rem;
+        
+        max-width: 800px; /* Limita a largura da descrição */
+        margin-bottom: 30px; /* Espaço abaixo do texto */
+        color: #fff;
+    }
+    
+    /* Contêiner dos botões */
+    .buttons {
+        display: flex; /* Coloca os botões lado a lado */
+        gap: 90px; /* Espaço entre os botões */
+    }
+    
+    /* Estilo dos botões */
+    .buttons .reserve .menu{
+        font-size: 1rem;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px; /* Bordas arredondadas */
+        cursor: pointer;
+        font-weight: bold;
+        transition: 0.3s ease-in-out; /* Suaviza as interações */
+    }
+    
+    .buttons .reserve {
+        cursor: pointer;
+        font-weight: bold;
+        transition: 0.3s ease-in-out; /* Suaviza as interações */
+        border: none;
+        font-size: 1rem;
+        padding: 10px 20px;
+        border-radius: 5px;
+        display: flex;
+        text-decoration: none;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        background-color: #F1EAD8; /* Vermelho para o botão de reserva */
+        color: #9E7A41;
+    }
+    
+    .buttons .menu {
+        cursor: pointer;
+        font-weight: bold;
+        transition: 0.3s ease-in-out; /* Suaviza as interações */
+        border: none;
+        font-size: 1rem;
+        padding: 10px 20px;
+        border-radius: 5px;
+        display: flex;
+        text-decoration: none;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        background-color: #2a9d8f; /* Verde para o botão de menu */
+        color: #fff;
+    }
+    
+    /* Efeito ao passar o mouse nos botões */
+    .buttons .reserve .menu:hover {
+        opacity: 0.8;
+    }
+    
+    /* Contêiner com a caixa de informações e a imagem */
+    
+    .info-and-image-container {
+        background-color: #9E7A41;
+        display: flex; /* Coloca a caixa e a imagem lado a lado */
+        justify-content: center;
+        text-align: center;
+        
+        position: relative;
+        gap: 0; /* Remove qualquer espaço entre a caixa e a imagem */
+        z-index: 2;
+    }
+    
+    
+    /* Estilo do quadrado com informações */
+    
+    .info-box-container {
+        width: 100%; /* Faz com que a imagem ocupe toda a largura disponível */
+        padding: 30px;
+        border-radius: 10px;
+        position: relative;
+        max-width: 400px;
+        
+    }
+    .info-box {
+        background-color:#F1EAD8;
+        padding: 30px;
+        
+        width: 100%;
+        color: #000000;
+        text-align: left;
+        margin: 80px;
+    }
+    
+    /* Estilo do título da caixa */
+    .info-box .titulotres {
+        font-family: "Bebas Neue", sans-serif;
+        color: #9E7A41;
+        justify-content: center;
+        text-align: center;
+        font-size: 34px;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+    
+    
+    /* Linha colorida dentro da caixa */
+    .italian-linee {
+        display: flex; /* Organiza as cores lado a lado */
+        justify-content: center; /* Centraliza as cores dentro do contêiner */
+        text-align: center;
+        width: 150px; /* Comprimento total da linha */
+        height: 3px; /* Altura da linha */
+        margin: 15px auto; /* Centraliza o contêiner horizontalmente */
+    }
+    
+    /* Estilos das cores individuais */
+    .italian-linee .green {
+        flex: 1; /* Cada cor ocupa o mesmo espaço */
+        background-color: green;
+    }
+    
+    .italian-linee .white {
+        flex: 1;
+        background-color: white;
+    }
+    
+    .italian-linee .red {
+        flex: 1;
+        background-color: red;
+    }
+    
+    .tituloquatro {
+        font-family: "Poppins", sans-serif;
+        text-align: center;
+        font-weight: 300;
+        font-size: 1.2rem;
+        padding: 15px;
+        margin-bottom: 25px;
+        
+    }
+    
+    .schedulee {
+        text-align: center;
+        font-size: 1rem;
+        margin-top: 40px; /* Espaço superior para afastar mais o texto */
+        margin-bottom: 20px; /* Espaço adicional após o horário de atendimento */
+    }
+    
+    .info-box p {
+        font-family: "Poppins", sans-serif;
+        font-size: 1rem;
+        margin-bottom: 0px;
+    }
+    
+    /* Estilo da imagem ao lado */
+    .image-box {
+        width: 100%; /* Faz com que a imagem ocupe toda a largura disponível */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding:  5%;
+        margin-top: 27.5%;
+        text-align: center; /* Alinha a imagem ao centro */
+       
+    }
+    
+    /* Estilo da imagem */
+    .image-box img {
+        width: 100%;
+        height: auto;
+        
+    }
+    
+    .imagem{
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        background-color: #4D3B1F;
+    }
+    
+    .imgs{
+        padding: 60px 20px;  
+        width: 100%;
+    }
+    
+    .heros {
+        background-color:#EBB561 ;
+    
+        position: relative; /* Necessário para posicionar o texto dentro do contêiner */
+        background-position: center; /* Centraliza a imagem no fundo */
+        background-repeat: no-repeat; /* Evita repetição da imagem */
+        display: flex; /* Para centralizar o conteúdo */
+        flex-direction: column; /* Organiza o texto em coluna */
+        justify-content: center; /* Centraliza verticalmente */
+        align-items: center; /* Centraliza horizontalmente */
+        text-align: center; /* Centraliza o texto */
+        color: #fff; /* Texto em branco para melhor contraste */
+        padding: 20px; /* Adiciona espaço interno */
+        z-index: 1; /* Certifica que o texto aparece acima do fundo */ 
+    }
+    
+    .ultimaimagem{
+        background-color: #EBB561;
+    }
+    .ultimaimg{
+        filter: brightness(50%); /* Ajusta o brilho, 0% é preto total, 100% é brilho normal */
+        display: block;
+        margin: 10px auto; /* Centraliza a imagem horizontalmente */
+        max-width: 100%; /* Garante que a imagem se ajuste ao tamanho da tela */
+        height: auto; /* Mantém a proporção da imagem */
+    }
+    
+    .ultimaimagem {
+        position: relative; /* Torna o contêiner o ponto de referência para o posicionamento absoluto */
+        width: 100%; /* Ajusta a largura do contêiner (ou defina uma largura fixa) */
+    }
+    
+    .ultimaimagem .ultimaimg{
+        width: 100%; /* Ajusta a imagem ao tamanho do contêiner */
+        filter: brightness(50%); /* Escurece a imagem */
+    }
+    
+    .texto-sobre-imagem {
+        position: absolute; /* Permite que o texto seja posicionado em cima da imagem */
+        top: 50%; /* Posiciona o texto no meio da imagem (ajuste conforme necessário) */
+        left: 50%; /* Posiciona o texto no centro horizontal */
+        transform: translate(-50%, -50%); /* Ajusta para o centro exato da imagem */
+        color: white; /* Cor do texto */
+       
+    }
+    
+    .logoultimo{
+        top: 15%; /* Posiciona o texto no meio da imagem (ajuste conforme necessário) */
+        left: 50%; /* Posiciona o texto no centro horizontal */
+        transform: translate(-50%, -50%); /* Ajusta para o centro exato da imagem */
+        max-width: 200px; /* Tamanho máximo do logo */
+        margin-bottom: 150px; /* Espaçamento entre o logo e o texto */
+        position: absolute; /* Permite que o texto seja posicionado em cima da imagem */
+        
+        text-align: center;
+        justify-content: center;
+        
+    }
+    
+    .ultimotexto {
+        font-size: 20px;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        margin: 2%; /* Remove as margens para um layout mais compacto */
+        font-family: "Poppins", sans-serif;
+        top: 55%;
+        top: 35%; /* Posiciona o texto no meio da imagem (ajuste conforme necessário)*/
+            position: absolute; /* Permite que o texto seja posicionado em cima da imagem */
+       
+    }
+    
+    .italiann-line {
+        top: 85%;
+        position: absolute; /* Permite que o texto seja posicionado em cima da imagem */
+        display: flex; /* Organiza as cores lado a lado */
+        text-align: center;
+        width: 700px; /* Comprimento total da linha */
+        height: 3px; /* Altura da linha */
+        margin: 15px auto; /* Centraliza o contêiner horizontalmente */
+    }
+    
+    /* Estilos das cores individuais */
+    .italiann-line .green {
+        flex: 1; /* Cada cor ocupa o mesmo espaço */
+        background-color: green;
+    }
+    
+    .italiann-line .white {
+        flex: 1;
+        background-color: white;
+    }
+    
+    .italiann-line .red {
+        flex: 1;
+        background-color: red;
+    }
+    
+    
+    footer {
+        text-align: center;
+        padding: 1rem;
+        background-color: #EBB561;
+        color: white;
+    }
+    
+    .logofooter{
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+}  
+
+
+@media screen and (min-width:1114px){
+
+    
+    .cabeçalho {
+        width: 100%;
+        font-family: "Montserrat", serif;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        
+    }
+    
+    .logocabeçalho{
+        padding: 2px 10px ;
+    }
+    .iconecabeçalho{
+        padding: 0 45px;
+    }
+    
+    .cabeçalho img {
+        max-width: 100px; /* Tamanho da imagem */
+    }
+    
+    .menu {
+        flex-grow: 1; /* Faz o menu ocupar o espaço restante */
+        display: flex;
+        justify-content: center; /* Centraliza os itens horizontalmente */
+    }
+    
+    .menu ul {
+        display: flex;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        gap: 40px; /* Espaço entre os itens */
+    }
+    
+    .menu ul li {
+        display: flex;
+        align-items: center;
+        
+    }
+    
+    .menu a {
+        text-decoration: none;
+        color: #000;
+        display: flex;
+        align-items: center;
+        font-size: 16px; /* Ajuste do tamanho da fonte */
+        gap: 8px; /* Espaço entre ícone e texto */
+    }
+    .icon {
+        
+        display: inline-block; /* Garante que o ícone fique na mesma linha do texto */
+        vertical-align: middle; /* Alinha verticalmente com o texto */
+    }
+    
+    .icon i {
+        font-size: 24px; /* Tamanho do ícone */
+        
+    }
+    .txt-link {
+        display: inline-block; /* Garante que o texto fique alinhado com o ícone */
+        vertical-align: middle; /* Alinha verticalmente com o ícone */
+    }
+    .iconecabeçalho .icon {
+        margin-right: 2px; /* Reduz drasticamente o espaço entre o ícone e o texto */
+        padding: 0; /* Remove possíveis preenchimentos extras */
+        display: inline-block; /* Mantém os elementos na mesma linha */
+        vertical-align: middle; /* Alinha com o texto */
+    }
+    
+    .iconecabeçalho .txt-link {
+        margin-left: 0; /* Remove qualquer margem à esquerda do texto */
+        display: inline-block; /* Garante que o texto fique ao lado do ícone */
+        vertical-align: middle; /* Alinha com o ícone */
+    }
+    
+    header {
+        font-family: "Montserrat", serif;
+        background-color: #EBB561;
+        font-weight: 900;
+        color: white;
+        padding: 0rem;
+        text-align: center;
+    }
+    
+    .hero {
+        background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('italia\ \(1\).png'); /* Insira o caminho da sua imagem */
+        position: relative; /* Necessário para posicionar o texto dentro do contêiner */
+        width: 100%; /* Largura total da tela */
+        height: 100vh; /* Altura total da tela */
+        background-size: cover; /* Faz a imagem cobrir toda a área */
+        background-position: center; /* Centraliza a imagem no fundo */
+        background-repeat: no-repeat; /* Evita repetição da imagem */
+        display: flex; /* Para centralizar o conteúdo */
+        flex-direction: column; /* Organiza o texto em coluna */
+        justify-content: center; /* Centraliza verticalmente */
+        align-items: center; /* Centraliza horizontalmente */
+        text-align: center; /* Centraliza o texto */
+        color: #fff; /* Texto em branco para melhor contraste */
+        padding: 20px; /* Adiciona espaço interno */
+        z-index: 1; /* Certifica que o texto aparece acima do fundo */ 
+    }
+    
+    .hero .tituloum {
+        color: #F1EAD8;
+        font-family: "Bebas Neue", sans-serif;
+        font-size: 30px; /* Tamanho do título principal */
+        margin: 10px 0;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+    
+    /* Estilo do subtítulo */
+    .hero .titulodois {
+        color: #fff;
+        font-family: "Special Elite", system-ui;
+        font-size: 43px; /* Tamanho do título principal */
+        margin: 10px 0;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+    
+    /* Contêiner da linha com as cores */
+    .italian-line {
+        display: flex; /* Organiza as cores lado a lado */
+        width: 150px; /* Comprimento total da linha */
+        height: 3px; /* Altura da linha */
+        margin: 15px 0; /* Espaço ao redor da linha */
+    }
+    
+    /* Estilos das cores individuais */
+    .italian-line .green {
+        flex: 1; /* Cada cor ocupa o mesmo espaço */
+        background-color: green;
+    }
+    
+    .italian-line .white {
+        flex: 1;
+        background-color: white;
+    }
+    
+    .italian-line .red {
+        flex: 1;
+        background-color: red;
+    }
+    
+    /* Estilo da descrição */
+    .hero .description {
+        font-family: "Poppins", sans-serif;
+        font-size: 1.5rem;
+        
+        max-width: 800px; /* Limita a largura da descrição */
+        margin-bottom: 30px; /* Espaço abaixo do texto */
+        color: #fff;
+    }
+    
+    /* Contêiner dos botões */
+    .buttons {
+        display: flex; /* Coloca os botões lado a lado */
+        gap: 90px; /* Espaço entre os botões */
+    }
+    
+    /* Estilo dos botões */
+    .buttons .reserve .menu{
+        font-size: 1rem;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px; /* Bordas arredondadas */
+        cursor: pointer;
+        font-weight: bold;
+        transition: 0.3s ease-in-out; /* Suaviza as interações */
+    }
+    
+    .buttons .reserve {
+        cursor: pointer;
+        font-weight: bold;
+        transition: 0.3s ease-in-out; /* Suaviza as interações */
+        border: none;
+        font-size: 1rem;
+        padding: 10px 20px;
+        border-radius: 5px;
+        display: flex;
+        text-decoration: none;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        background-color: #F1EAD8; /* Vermelho para o botão de reserva */
+        color: #9E7A41;
+    }
+    
+    .buttons .menu {
+        cursor: pointer;
+        font-weight: bold;
+        transition: 0.3s ease-in-out; /* Suaviza as interações */
+        border: none;
+        font-size: 1rem;
+        padding: 10px 20px;
+        border-radius: 5px;
+        display: flex;
+        text-decoration: none;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        background-color: #2a9d8f; /* Verde para o botão de menu */
+        color: #fff;
+    }
+    
+    /* Efeito ao passar o mouse nos botões */
+    .buttons .reserve .menu:hover {
+        opacity: 0.8;
+    }
+    
+    /* Contêiner com a caixa de informações e a imagem */
+    
+    .info-and-image-container {
+        background-color: #9E7A41;
+        display: flex; /* Coloca a caixa e a imagem lado a lado */
+        justify-content: center;
+        text-align: center;
+        
+        position: relative;
+        gap: 0; /* Remove qualquer espaço entre a caixa e a imagem */
+        z-index: 2;
+    }
+    
+    
+    /* Estilo do quadrado com informações */
+    
+    .info-box-container {
+        width: 100%; /* Faz com que a imagem ocupe toda a largura disponível */
+        padding: 40px;
+        border-radius: 10px;
+        position: relative;
+        max-width: 400px;
+        
+    }
+    .info-box {
+        background-color:#F1EAD8;
+        padding: 30px;
+        
+        width: 100%;
+        color: #000000;
+        text-align: left;
+        margin: 80px;
+    }
+    
+    /* Estilo do título da caixa */
+    .info-box .titulotres {
+        font-family: "Bebas Neue", sans-serif;
+        color: #9E7A41;
+        justify-content: center;
+        text-align: center;
+        font-size: 34px;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+    
+    
+    /* Linha colorida dentro da caixa */
+    .italian-linee {
+        display: flex; /* Organiza as cores lado a lado */
+        justify-content: center; /* Centraliza as cores dentro do contêiner */
+        text-align: center;
+        width: 150px; /* Comprimento total da linha */
+        height: 3px; /* Altura da linha */
+        margin: 15px auto; /* Centraliza o contêiner horizontalmente */
+    }
+    
+    /* Estilos das cores individuais */
+    .italian-linee .green {
+        flex: 1; /* Cada cor ocupa o mesmo espaço */
+        background-color: green;
+    }
+    
+    .italian-linee .white {
+        flex: 1;
+        background-color: white;
+    }
+    
+    .italian-linee .red {
+        flex: 1;
+        background-color: red;
+    }
+    
+    .tituloquatro {
+        font-family: "Poppins", sans-serif;
+        text-align: center;
+        font-weight: 300;
+        font-size: 1.2rem;
+        padding: 15px;
+        margin-bottom: 25px;
+        
+    }
+    
+    .schedulee {
+        text-align: center;
+        font-size: 1rem;
+        margin-top: 40px; /* Espaço superior para afastar mais o texto */
+        margin-bottom: 20px; /* Espaço adicional após o horário de atendimento */
+    }
+    
+    .info-box p {
+        font-family: "Poppins", sans-serif;
+        font-size: 1rem;
+        margin-bottom: 0px;
+    }
+    
+    /* Estilo da imagem ao lado */
+    .image-box {
+        width: 100%; /* Faz com que a imagem ocupe toda a largura disponível */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding:  3%;
+        margin-top: 14%;
+        text-align: center; /* Alinha a imagem ao centro */
+       
+    }
+    
+    /* Estilo da imagem */
+    .image-box img {
+        width: 100%;
+        height: auto;
+        
+    }
+    
+    .imagem{
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        background-color: #4D3B1F;
+    }
+    
+    .imgs{
+        padding: 60px 20px;  
+        width: 100%;
+    }
+    
+    .heros {
+        background-color:#EBB561 ;
+    
+        position: relative; /* Necessário para posicionar o texto dentro do contêiner */
+        background-position: center; /* Centraliza a imagem no fundo */
+        background-repeat: no-repeat; /* Evita repetição da imagem */
+        display: flex; /* Para centralizar o conteúdo */
+        flex-direction: column; /* Organiza o texto em coluna */
+        justify-content: center; /* Centraliza verticalmente */
+        align-items: center; /* Centraliza horizontalmente */
+        text-align: center; /* Centraliza o texto */
+        color: #fff; /* Texto em branco para melhor contraste */
+        padding: 20px; /* Adiciona espaço interno */
+        z-index: 1; /* Certifica que o texto aparece acima do fundo */ 
+    }
+    
+    .ultimaimagem{
+        background-color: #EBB561;
+    }
+    .ultimaimg{
+        filter: brightness(50%); /* Ajusta o brilho, 0% é preto total, 100% é brilho normal */
+        display: block;
+        margin: 10px auto; /* Centraliza a imagem horizontalmente */
+        max-width: 100%; /* Garante que a imagem se ajuste ao tamanho da tela */
+        height: auto; /* Mantém a proporção da imagem */
+    }
+    
+    .ultimaimagem {
+        position: relative; /* Torna o contêiner o ponto de referência para o posicionamento absoluto */
+        width: 100%; /* Ajusta a largura do contêiner (ou defina uma largura fixa) */
+    }
+    
+    .ultimaimagem .ultimaimg{
+        width: 100%; /* Ajusta a imagem ao tamanho do contêiner */
+        filter: brightness(50%); /* Escurece a imagem */
+    }
+    
+    .texto-sobre-imagem {
+        position: absolute; /* Permite que o texto seja posicionado em cima da imagem */
+        top: 50%; /* Posiciona o texto no meio da imagem (ajuste conforme necessário) */
+        left: 50%; /* Posiciona o texto no centro horizontal */
+        transform: translate(-50%, -50%); /* Ajusta para o centro exato da imagem */
+        color: white; /* Cor do texto */
+       
+    }
+    
+    .logoultimo{
+        top: 15%; /* Posiciona o texto no meio da imagem (ajuste conforme necessário) */
+        left: 50%; /* Posiciona o texto no centro horizontal */
+        transform: translate(-50%, -50%); /* Ajusta para o centro exato da imagem */
+        max-width: 200px; /* Tamanho máximo do logo */
+        margin-bottom: 150px; /* Espaçamento entre o logo e o texto */
+        position: absolute; /* Permite que o texto seja posicionado em cima da imagem */
+        
+        text-align: center;
+        justify-content: center;
+        
+    }
+    
+    .ultimotexto {
+        font-size: 20px;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        margin: 2%; /* Remove as margens para um layout mais compacto */
+        font-family: "Poppins", sans-serif;
+        top: 55%;
+        top: 35%; /* Posiciona o texto no meio da imagem (ajuste conforme necessário)*/
+            position: absolute; /* Permite que o texto seja posicionado em cima da imagem */
+       
+    }
+    
+    .italiann-line {
+        top: 85%;
+        position: absolute; /* Permite que o texto seja posicionado em cima da imagem */
+        display: flex; /* Organiza as cores lado a lado */
+        text-align: center;
+        width: 700px; /* Comprimento total da linha */
+        height: 3px; /* Altura da linha */
+        margin: 15px auto; /* Centraliza o contêiner horizontalmente */
+    }
+    
+    /* Estilos das cores individuais */
+    .italiann-line .green {
+        flex: 1; /* Cada cor ocupa o mesmo espaço */
+        background-color: green;
+    }
+    
+    .italiann-line .white {
+        flex: 1;
+        background-color: white;
+    }
+    
+    .italiann-line .red {
+        flex: 1;
+        background-color: red;
+    }
+    
+    
+    footer {
+        text-align: center;
+        padding: 1rem;
+        background-color: #EBB561;
+        color: white;
+    }
+    
+    .logofooter{
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+}    
+
+
+@media screen and (min-width:1280px){
+
+    
+    .cabeçalho {
+        width: 100%;
+        font-family: "Montserrat", serif;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        
+    }
+    
+    .logocabeçalho{
+        padding: 2px 10px ;
+    }
+    .iconecabeçalho{
+        padding: 0 45px;
+    }
+    
+    .cabeçalho img {
+        max-width: 100px; /* Tamanho da imagem */
+    }
+    
+    .menu {
+        flex-grow: 1; /* Faz o menu ocupar o espaço restante */
+        display: flex;
+        justify-content: center; /* Centraliza os itens horizontalmente */
+    }
+    
+    .menu ul {
+        display: flex;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        gap: 40px; /* Espaço entre os itens */
+    }
+    
+    .menu ul li {
+        display: flex;
+        align-items: center;
+        
+    }
+    
+    .menu a {
+        text-decoration: none;
+        color: #000;
+        display: flex;
+        align-items: center;
+        font-size: 16px; /* Ajuste do tamanho da fonte */
+        gap: 8px; /* Espaço entre ícone e texto */
+    }
+    .icon {
+        
+        display: inline-block; /* Garante que o ícone fique na mesma linha do texto */
+        vertical-align: middle; /* Alinha verticalmente com o texto */
+    }
+    
+    .icon i {
+        font-size: 24px; /* Tamanho do ícone */
+        
+    }
+    .txt-link {
+        display: inline-block; /* Garante que o texto fique alinhado com o ícone */
+        vertical-align: middle; /* Alinha verticalmente com o ícone */
+    }
+    .iconecabeçalho .icon {
+        margin-right: 2px; /* Reduz drasticamente o espaço entre o ícone e o texto */
+        padding: 0; /* Remove possíveis preenchimentos extras */
+        display: inline-block; /* Mantém os elementos na mesma linha */
+        vertical-align: middle; /* Alinha com o texto */
+    }
+    
+    .iconecabeçalho .txt-link {
+        margin-left: 0; /* Remove qualquer margem à esquerda do texto */
+        display: inline-block; /* Garante que o texto fique ao lado do ícone */
+        vertical-align: middle; /* Alinha com o ícone */
+    }
+    
+    header {
+        font-family: "Montserrat", serif;
+        background-color: #EBB561;
+        font-weight: 900;
+        color: white;
+        padding: 0rem;
+        text-align: center;
+    }
+    
+    .hero {
+        background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('italia\ \(1\).png'); /* Insira o caminho da sua imagem */
+        position: relative; /* Necessário para posicionar o texto dentro do contêiner */
+        width: 100%; /* Largura total da tela */
+        height: 100vh; /* Altura total da tela */
+        background-size: cover; /* Faz a imagem cobrir toda a área */
+        background-position: center; /* Centraliza a imagem no fundo */
+        background-repeat: no-repeat; /* Evita repetição da imagem */
+        display: flex; /* Para centralizar o conteúdo */
+        flex-direction: column; /* Organiza o texto em coluna */
+        justify-content: center; /* Centraliza verticalmente */
+        align-items: center; /* Centraliza horizontalmente */
+        text-align: center; /* Centraliza o texto */
+        color: #fff; /* Texto em branco para melhor contraste */
+        padding: 20px; /* Adiciona espaço interno */
+        z-index: 1; /* Certifica que o texto aparece acima do fundo */ 
+    }
+    
+    .hero .tituloum {
+        color: #F1EAD8;
+        font-family: "Bebas Neue", sans-serif;
+        font-size: 30px; /* Tamanho do título principal */
+        margin: 10px 0;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+    
+    /* Estilo do subtítulo */
+    .hero .titulodois {
+        color: #fff;
+        font-family: "Special Elite", system-ui;
+        font-size: 43px; /* Tamanho do título principal */
+        margin: 10px 0;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+    
+    /* Contêiner da linha com as cores */
+    .italian-line {
+        display: flex; /* Organiza as cores lado a lado */
+        width: 150px; /* Comprimento total da linha */
+        height: 3px; /* Altura da linha */
+        margin: 15px 0; /* Espaço ao redor da linha */
+    }
+    
+    /* Estilos das cores individuais */
+    .italian-line .green {
+        flex: 1; /* Cada cor ocupa o mesmo espaço */
+        background-color: green;
+    }
+    
+    .italian-line .white {
+        flex: 1;
+        background-color: white;
+    }
+    
+    .italian-line .red {
+        flex: 1;
+        background-color: red;
+    }
+    
+    /* Estilo da descrição */
+    .hero .description {
+        font-family: "Poppins", sans-serif;
+        font-size: 1.5rem;
+        
+        max-width: 800px; /* Limita a largura da descrição */
+        margin-bottom: 30px; /* Espaço abaixo do texto */
+        color: #fff;
+    }
+    
+    /* Contêiner dos botões */
+    .buttons {
+        display: flex; /* Coloca os botões lado a lado */
+        gap: 90px; /* Espaço entre os botões */
+    }
+    
+    /* Estilo dos botões */
+    .buttons .reserve .menu{
+        font-size: 1rem;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px; /* Bordas arredondadas */
+        cursor: pointer;
+        font-weight: bold;
+        transition: 0.3s ease-in-out; /* Suaviza as interações */
+    }
+    
+    .buttons .reserve {
+        cursor: pointer;
+        font-weight: bold;
+        transition: 0.3s ease-in-out; /* Suaviza as interações */
+        border: none;
+        font-size: 1rem;
+        padding: 10px 20px;
+        border-radius: 5px;
+        display: flex;
+        text-decoration: none;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        background-color: #F1EAD8; /* Vermelho para o botão de reserva */
+        color: #9E7A41;
+    }
+    
+    .buttons .menu {
+        cursor: pointer;
+        font-weight: bold;
+        transition: 0.3s ease-in-out; /* Suaviza as interações */
+        border: none;
+        font-size: 1rem;
+        padding: 10px 20px;
+        border-radius: 5px;
+        display: flex;
+        text-decoration: none;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        background-color: #2a9d8f; /* Verde para o botão de menu */
+        color: #fff;
+    }
+    
+    /* Efeito ao passar o mouse nos botões */
+    .buttons .reserve .menu:hover {
+        opacity: 0.8;
+    }
+    
+    /* Contêiner com a caixa de informações e a imagem */
+    
+    .info-and-image-container {
+        background-color: #9E7A41;
+        display: flex; /* Coloca a caixa e a imagem lado a lado */
+        justify-content: center;
+        text-align: center;
+        
+        position: relative;
+        gap: 0; /* Remove qualquer espaço entre a caixa e a imagem */
+        z-index: 2;
+    }
+    
+    
+    /* Estilo do quadrado com informações */
+    
+    .info-box-container {
+        width: 100%; /* Faz com que a imagem ocupe toda a largura disponível */
+        padding: 40px;
+        border-radius: 10px;
+        position: relative;
+        max-width: 400px;
+        
+    }
+    .info-box {
+        background-color:#F1EAD8;
+        padding: 50px;
+        
+        width: 100%;
+        color: #000000;
+        text-align: left;
+        margin: 80px;
+    }
+    
+    /* Estilo do título da caixa */
+    .info-box .titulotres {
+        font-family: "Bebas Neue", sans-serif;
+        color: #9E7A41;
+        justify-content: center;
+        text-align: center;
+        font-size: 34px;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+    
+    
+    /* Linha colorida dentro da caixa */
+    .italian-linee {
+        display: flex; /* Organiza as cores lado a lado */
+        justify-content: center; /* Centraliza as cores dentro do contêiner */
+        text-align: center;
+        width: 150px; /* Comprimento total da linha */
+        height: 3px; /* Altura da linha */
+        margin: 15px auto; /* Centraliza o contêiner horizontalmente */
+    }
+    
+    /* Estilos das cores individuais */
+    .italian-linee .green {
+        flex: 1; /* Cada cor ocupa o mesmo espaço */
+        background-color: green;
+    }
+    
+    .italian-linee .white {
+        flex: 1;
+        background-color: white;
+    }
+    
+    .italian-linee .red {
+        flex: 1;
+        background-color: red;
+    }
+    
+    .tituloquatro {
+        font-family: "Poppins", sans-serif;
+        text-align: center;
+        font-weight: 300;
+        font-size: 1.2rem;
+        padding: 15px;
+        margin-bottom: 25px;
+        
+    }
+    
+    .schedulee {
+        text-align: center;
+        font-size: 1rem;
+        margin-top: 40px; /* Espaço superior para afastar mais o texto */
+        margin-bottom: 20px; /* Espaço adicional após o horário de atendimento */
+    }
+    
+    .info-box p {
+        font-family: "Poppins", sans-serif;
+        font-size: 1rem;
+        margin-bottom: 0px;
+    }
+    
+    /* Estilo da imagem ao lado */
+    .image-box {
+        width: 100%; /* Faz com que a imagem ocupe toda a largura disponível */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding:  3%;
+        margin-top: 13.2%;
+        text-align: center; /* Alinha a imagem ao centro */
+       
+    }
+    
+    /* Estilo da imagem */
+    .image-box img {
+        width: 100%;
+        height: auto;
+        
+    }
+    
+    .imagem{
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        background-color: #4D3B1F;
+    }
+    
+    .imgs{
+        padding: 60px 20px;  
+        width: 100%;
+    }
+    
+    .heros {
+        background-color:#EBB561 ;
+    
+        position: relative; /* Necessário para posicionar o texto dentro do contêiner */
+        background-position: center; /* Centraliza a imagem no fundo */
+        background-repeat: no-repeat; /* Evita repetição da imagem */
+        display: flex; /* Para centralizar o conteúdo */
+        flex-direction: column; /* Organiza o texto em coluna */
+        justify-content: center; /* Centraliza verticalmente */
+        align-items: center; /* Centraliza horizontalmente */
+        text-align: center; /* Centraliza o texto */
+        color: #fff; /* Texto em branco para melhor contraste */
+        padding: 20px; /* Adiciona espaço interno */
+        z-index: 1; /* Certifica que o texto aparece acima do fundo */ 
+    }
+    
+    .ultimaimagem{
+        background-color: #EBB561;
+    }
+    .ultimaimg{
+        filter: brightness(50%); /* Ajusta o brilho, 0% é preto total, 100% é brilho normal */
+        display: block;
+        margin: 10px auto; /* Centraliza a imagem horizontalmente */
+        max-width: 100%; /* Garante que a imagem se ajuste ao tamanho da tela */
+        height: auto; /* Mantém a proporção da imagem */
+    }
+    
+    .ultimaimagem {
+        position: relative; /* Torna o contêiner o ponto de referência para o posicionamento absoluto */
+        width: 100%; /* Ajusta a largura do contêiner (ou defina uma largura fixa) */
+    }
+    
+    .ultimaimagem .ultimaimg{
+        width: 100%; /* Ajusta a imagem ao tamanho do contêiner */
+        filter: brightness(50%); /* Escurece a imagem */
+    }
+    
+    .texto-sobre-imagem {
+        position: absolute; /* Permite que o texto seja posicionado em cima da imagem */
+        top: 50%; /* Posiciona o texto no meio da imagem (ajuste conforme necessário) */
+        left: 50%; /* Posiciona o texto no centro horizontal */
+        transform: translate(-50%, -50%); /* Ajusta para o centro exato da imagem */
+        color: white; /* Cor do texto */
+       
+    }
+    
+    .logoultimo{
+        top: 15%; /* Posiciona o texto no meio da imagem (ajuste conforme necessário) */
+        left: 50%; /* Posiciona o texto no centro horizontal */
+        transform: translate(-50%, -50%); /* Ajusta para o centro exato da imagem */
+        max-width: 200px; /* Tamanho máximo do logo */
+        margin-bottom: 150px; /* Espaçamento entre o logo e o texto */
+        position: absolute; /* Permite que o texto seja posicionado em cima da imagem */
+        
+        text-align: center;
+        justify-content: center;
+        
+    }
+    
+    .ultimotexto {
+        font-size: 20px;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        margin: 2%; /* Remove as margens para um layout mais compacto */
+        font-family: "Poppins", sans-serif;
+        top: 55%;
+        top: 35%; /* Posiciona o texto no meio da imagem (ajuste conforme necessário)*/
+            position: absolute; /* Permite que o texto seja posicionado em cima da imagem */
+       
+    }
+    
+    .italiann-line {
+        top: 85%;
+        position: absolute; /* Permite que o texto seja posicionado em cima da imagem */
+        display: flex; /* Organiza as cores lado a lado */
+        text-align: center;
+        width: 700px; /* Comprimento total da linha */
+        height: 3px; /* Altura da linha */
+        margin: 15px auto; /* Centraliza o contêiner horizontalmente */
+    }
+    
+    /* Estilos das cores individuais */
+    .italiann-line .green {
+        flex: 1; /* Cada cor ocupa o mesmo espaço */
+        background-color: green;
+    }
+    
+    .italiann-line .white {
+        flex: 1;
+        background-color: white;
+    }
+    
+    .italiann-line .red {
+        flex: 1;
+        background-color: red;
+    }
+    
+    
+    footer {
+        text-align: center;
+        padding: 1rem;
+        background-color: #EBB561;
+        color: white;
+    }
+    
+    .logofooter{
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+}    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Estilo para telas maiores (desktops e tablets) */
+@media (min-width: 769px) {
+    .cabeçalho {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .menu ul {
+        display: flex;
+        list-style: none;
+    }
+    .menu ul li {
+        margin: 0 15px;
+    }
+    .iconecabeçalho {
+        display: flex;
+        align-items: center;
+    }
+    .doisitaliann-line {
+        display: flex;
+    }
+    .doistitulotres {
+        margin-top: 50px;
+    }
+    /* Ajuste no tamanho das imagens, para telas grandes */
+    .pizza-image, .pizza-imagetres, .drink-image {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+/* Estilo para telas pequenas (celulares) */
+@media (max-width: 768px) {
+    /* Ajuste do cabeçalho */
+    .cabeçalho {
+        display: block;
+        text-align: center;
+        padding: 15px;
+    }
+    
+    /* Centraliza o menu e os itens */
+    .menu ul {
+        padding: 0;
+        display: block;
+        margin-top: 20px;
+    }
+    .menu ul li {
+        margin-bottom: 15px;
+    }
+
+    /* Ícones e texto do cabeçalho mais próximos */
+    .iconecabeçalho {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .iconecabeçalho .icon {
+        margin-right: 5px;
+    }
+
+    .doistituloum, .doistitulodois, .doistitulotres {
+        text-align: center;
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+    /* Tamanho das imagens ajustado para celulares */
+    .pizza-image, .pizza-imagetres, .drink-image {
+        max-width: 100%;
+        height: auto;
+    }
+    
+    .textofinal h3 {
+        font-size: 14px;
+        text-align: center;
+    }
+    
+    /* Espaçamento entre o preço e a imagem */
+    .preçosum, .preçosdois, .preçostres, .preçosquatro {
+        margin-bottom: 20px;
+    }
+}
+

@@ -1,0 +1,644 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@293&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Special+Elite&display=swap');
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+
+    
+}
+
+
+.cabeçalho {
+    width: 100%;
+    font-family: "Montserrat", serif;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.logocabeçalho{
+    padding: 2px 10px ;
+}
+.iconecabeçalho{
+    padding: 0 45px;
+}
+
+.cabeçalho img {
+    max-width: 100px; /* Tamanho da imagem */
+}
+
+.menu {
+    flex-grow: 1; /* Faz o menu ocupar o espaço restante */
+    display: flex;
+    justify-content: center; /* Centraliza os itens horizontalmente */
+}
+
+.menu ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 40px; /* Espaço entre os itens */
+}
+
+.menu ul li {
+    display: flex;
+    align-items: center;
+    
+}
+
+.menu a {
+    text-decoration: none;
+    color: #000;
+    display: flex;
+    align-items: center;
+    font-size: 16px; /* Ajuste do tamanho da fonte */
+    gap: 8px; /* Espaço entre ícone e texto */
+}
+.icon {
+    
+    display: inline-block; /* Garante que o ícone fique na mesma linha do texto */
+    vertical-align: middle; /* Alinha verticalmente com o texto */
+}
+
+.icon i {
+    font-size: 24px; /* Tamanho do ícone */
+    
+}
+.txt-link {
+    display: inline-block; /* Garante que o texto fique alinhado com o ícone */
+    vertical-align: middle; /* Alinha verticalmente com o ícone */
+}
+.iconecabeçalho .icon {
+    margin-right: 2px; /* Reduz drasticamente o espaço entre o ícone e o texto */
+    padding: 0; /* Remove possíveis preenchimentos extras */
+    display: inline-block; /* Mantém os elementos na mesma linha */
+    vertical-align: middle; /* Alinha com o texto */
+}
+
+.iconecabeçalho .txt-link {
+    margin-left: 0; /* Remove qualquer margem à esquerda do texto */
+    display: inline-block; /* Garante que o texto fique ao lado do ícone */
+    vertical-align: middle; /* Alinha com o ícone */
+}
+
+header {
+    font-family: "Montserrat", serif;
+    background-color: #EBB561;
+    font-weight: 900;
+    color: white;
+    padding: 0rem;
+    text-align: center;
+}
+.heroo {
+    background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('imagem2.jpg'); /* Insira o caminho da sua imagem */
+    position: relative; /* Necessário para posicionar o texto dentro do contêiner */
+    width: 100%; /* Largura total da tela */
+    height: 100vh; /* Altura total da tela */
+    background-size: cover; /* Faz a imagem cobrir toda a área */
+    background-position: center; /* Centraliza a imagem no fundo */
+    background-repeat: no-repeat; /* Evita repetição da imagem */
+    display: flex; /* Para centralizar o conteúdo */
+    flex-direction: column; /* Organiza o texto em coluna */
+    justify-content: center; /* Centraliza verticalmente */
+    align-items: center; /* Centraliza horizontalmente */
+    text-align: center; /* Centraliza o texto */
+    color: #fff; /* Texto em branco para melhor contraste */
+    padding: 20px; /* Adiciona espaço interno */
+    z-index: 1; /* Certifica que o texto aparece acima do fundo */ 
+}
+
+/* Estilo do subtítulo */
+.heroo .doistituloum {
+    color: #fff;
+    font-family: "Special Elite", system-ui;
+    font-size: 43px; /* Tamanho do título principal */
+    margin: 10px 0;
+    
+    font-weight: bold;
+}
+
+/* Contêiner da linha com as cores */
+.doisitalian-line {
+    display: flex; /* Organiza as cores lado a lado */
+    width: 150px; /* Comprimento total da linha */
+    height: 3px; /* Altura da linha */
+    margin: 15px 0; /* Espaço ao redor da linha */
+}
+
+/* Estilos das cores individuais */
+.doisitalian-line .doisgreen {
+    flex: 1; /* Cada cor ocupa o mesmo espaço */
+    background-color: green;
+}
+
+.doisitalian-line .doiswhite {
+    flex: 1;
+    background-color: white;
+}
+
+.doisitalian-line .doisred {
+    flex: 1;
+    background-color: red;
+}
+
+.doistitulo{
+    
+    margin: 50px;
+    font-family: "Special Elite", system-ui;
+    color: #9E7A41;
+    font-weight: bold;
+
+}
+
+.doistitulodois{
+    font-size: 47px;
+
+}
+.doisitaliann-line {
+    display: flex; /* Organiza as cores lado a lado */
+    width: 150px; /* Comprimento total da linha */
+    height: 3px; /* Altura da linha */
+    margin: 15px 0; /* Espaço ao redor da linha */
+}
+
+/* Estilos das cores individuais */
+.doisitaliann-line .doisgreenn {
+    flex: 1; /* Cada cor ocupa o mesmo espaço */
+    background-color: green;
+}
+
+.doisitaliann-line .doiswhitee {
+    flex: 1;
+    background-color: white;
+}
+
+.doisitaliann-line .doisredd {
+    flex: 1;
+    background-color: red;
+}
+
+/*menupizzas*/
+
+.menupizzas{
+    display: flex; /* Ativa Flexbox */
+    flex-direction: column; /* Empilha os itens verticalmente */
+    align-items: center; /* Centraliza horizontalmente */
+    gap: 50px; /* Espaçamento entre os elementos */
+    width: 100%; /* Ocupa a largura total */
+    padding: 10px; /* Espaçamento interno */
+    margin-bottom: 20px; /* Espaçamento entre os itens */
+}
+.pizzaum{
+    font-family: "Special Elite", system-ui;
+    color: #9E7A41;
+    margin: 10px;
+}
+
+/* Contêiner principal */
+.preçosum {
+    display: flex; /* Organiza os elementos em linha */
+    align-items: center; /* Centraliza verticalmente */
+    justify-content: space-between; /* Espaço entre os elementos */
+    width: 100%; /* Ocupa toda a largura disponível */
+    
+    padding: 5px 0; /* Espaçamento vertical */
+    gap: 10px; /* Espaçamento entre os elementos */
+}
+
+/* Linha de separação */
+.line {
+    flex-grow: 1; /* Faz a linha ocupar o espaço restante */
+    height: 1px; /* Define a altura da linha */
+    background-color: #9E7A41; /* Cor da linha */
+    margin: 0 10px; /* Espaçamento horizontal da linha */
+}
+
+/* Preço */
+.price {
+
+    font-family: "Special Elite", system-ui;
+    font-size: 25px; /* Tamanho da fonte do preço */
+    color: #9E7A41; /* Cor do texto do preço */
+    font-weight: bold; /* Negrito no preço */
+    white-space: nowrap; /* Evita que o preço quebre a linha */
+}
+
+/* Contêiner da imagem */
+.image-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+/* Quadro ao redor da imagem */
+.image-box {
+    background-color: #4D3B1F; /* Cor do fundo do quadro */
+    padding: 10px; /* Espaçamento interno do quadro */
+    border: none; /* Borda do quadro */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para o quadro */
+}
+
+/* Imagem */
+.pizza-image {
+    max-width: 100%; /* Garante que a imagem não ultrapasse o contêiner */
+    max-height: 500px; /* Aumenta a altura máxima da imagem */
+    width: 400px; /* Define uma largura fixa maior */
+    height: auto; /* Mantém a proporção da imagem */
+}
+
+
+/*pizzadois*/
+
+.pizzadois{
+    font-family: "Special Elite", system-ui;
+    color: #9E7A41;
+    margin: 10px;
+}
+/* Contêiner principal */
+.preçosdois {
+    display: flex; /* Organiza os elementos em linha */
+    align-items: center; /* Centraliza verticalmente */
+    justify-content: space-between; /* Espaço entre os elementos */
+    width: 100%; /* Ocupa toda a largura disponível */
+    margin-top: 180px;
+    padding: 15px 0px; /* Espaçamento vertical */
+    gap: 50px; /* Espaçamento entre os elementos */
+}
+
+/* Linha de separação */
+.linedois {
+    flex-grow: 1; /* Faz a linha ocupar o espaço restante */
+    height: 1px; /* Define a altura da linha */
+    background-color: #9E7A41; /* Cor da linha */
+    margin: 0 10px; /* Espaçamento horizontal da linha */
+}
+
+/* Preço */
+.pricedois {
+
+    font-family: "Special Elite", system-ui;
+    font-size: 25px; /* Tamanho da fonte do preço */
+    color: #9E7A41; /* Cor do texto do preço */
+    font-weight: bold; /* Negrito no preço */
+    white-space: nowrap; /* Evita que o preço quebre a linha */
+}
+
+/* Contêiner da imagem */
+.image-containerdois {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+/* Quadro ao redor da imagem */
+.image-boxdois {
+    background-color: #4D3B1F; /* Cor do fundo do quadro */
+    padding: 10px; /* Espaçamento interno do quadro */
+    border: none; /* Borda do quadro */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para o quadro */
+}
+
+/* Imagem */
+.pizza-imagedois {
+    max-width: 100%; /* Garante que a imagem não ultrapasse o contêiner */
+    max-height: 500px; /* Aumenta a altura máxima da imagem */
+    width: 400px; /* Define uma largura fixa maior */
+    height: auto; /* Mantém a proporção da imagem */
+}
+
+
+/*pizzatres*/
+
+
+/* Preço */
+.pizzatres{
+    font-family: "Special Elite", system-ui;
+    color: #9E7A41;
+    margin: 10px;
+}
+/* Contêiner principal */
+.preçostres {
+    display: flex; /* Organiza os elementos em linha */
+    align-items: center; /* Centraliza verticalmente */
+    justify-content: space-between; /* Espaço entre os elementos */
+    width: 100%; /* Ocupa toda a largura disponível */
+    margin-top: 180px;
+    padding: 15px 0px; /* Espaçamento vertical */
+    gap: 50px; /* Espaçamento entre os elementos */
+}
+
+/* Linha de separação */
+.linetres {
+    flex-grow: 1; /* Faz a linha ocupar o espaço restante */
+    height: 1px; /* Define a altura da linha */
+    background-color: #9E7A41; /* Cor da linha */
+    margin: 0 10px; /* Espaçamento horizontal da linha */
+}
+
+/* Preço */
+.pricetres {
+
+    font-family: "Special Elite", system-ui;
+    font-size: 25px; /* Tamanho da fonte do preço */
+    color: #9E7A41; /* Cor do texto do preço */
+    font-weight: bold; /* Negrito no preço */
+    white-space: nowrap; /* Evita que o preço quebre a linha */
+}
+
+/* Contêiner da imagem */
+.image-containertres {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 175px; /* Adiciona espaçamento abaixo da imagem de morango */
+}
+
+/* Quadro ao redor da imagem */
+.image-boxtres {
+    background-color: #4D3B1F; /* Cor do fundo do quadro */
+    padding: 10px; /* Espaçamento interno do quadro */
+    border: none; /* Borda do quadro */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para o quadro */
+}
+
+/* Imagem */
+.pizza-imagetres {
+    max-width: 100%; /* Garante que a imagem não ultrapasse o contêiner */
+    max-height: 500px; /* Aumenta a altura máxima da imagem */
+    width: 400px; /* Define uma largura fixa maior */
+    height: auto; /* Mantém a proporção da imagem */
+}
+
+/*DINKS*/
+
+.doistitulotres{
+    margin-top: 50px; /* Adiciona um espaçamento acima do título */
+    
+    margin: 50px;
+    font-family: "Special Elite", system-ui;
+    color: #9E7A41;
+    font-weight: bold;
+
+}
+
+.doistitulodois{
+    font-size: 47px;
+
+}
+.doisitaliann-line {
+    display: flex; /* Organiza as cores lado a lado */
+    width: 150px; /* Comprimento total da linha */
+    height: 3px; /* Altura da linha */
+    margin: 15px 0; /* Espaço ao redor da linha */
+}
+
+/* Estilos das cores individuais */
+.doisitaliann-line .doisgreenn {
+    flex: 1; /* Cada cor ocupa o mesmo espaço */
+    background-color: green;
+}
+
+.doisitaliann-line .doiswhitee {
+    flex: 1;
+    background-color: white;
+}
+
+.doisitaliann-line .doisredd {
+    flex: 1;
+    background-color: red;
+}
+
+/*preço dink*/
+
+/* Preço */
+.drink{
+    font-family: "Special Elite", system-ui;
+    color: #9E7A41;
+    margin: 10px;
+}
+/* Contêiner principal */
+.preçosquatro {
+    display: flex; /* Organiza os elementos em linha */
+    align-items: center; /* Centraliza verticalmente */
+    justify-content: space-between; /* Espaço entre os elementos */
+    width: 100%; /* Ocupa toda a largura disponível */
+    
+    
+    gap: 50px; /* Espaçamento entre os elementos */
+}
+
+/* Linha de separação */
+.linedrink {
+    flex-grow: 1; /* Faz a linha ocupar o espaço restante */
+    height: 1px; /* Define a altura da linha */
+    background-color: #9E7A41; /* Cor da linha */
+    margin: 0 10px; /* Espaçamento horizontal da linha */
+    
+}
+
+/* Preço */
+.pricedrink {
+
+    font-family: "Special Elite", system-ui;
+    font-size: 25px; /* Tamanho da fonte do preço */
+    color: #9E7A41; /* Cor do texto do preço */
+    font-weight: bold; /* Negrito no preço */
+    white-space: nowrap; /* Evita que o preço quebre a linha */
+}
+
+/* Contêiner da imagem */
+.image-containerdrink {
+    padding: 30px 0px; /* Espaçamento vertical */
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+/* Quadro ao redor da imagem */
+.image-boxdrink {
+    background-color: #4D3B1F; /* Cor do fundo do quadro */
+    padding: 10px; /* Espaçamento interno do quadro */
+    border: none; /* Borda do quadro */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para o quadro */
+}
+
+/* Imagem */
+.drink-image{
+    max-width: 100%; /* Garante que a imagem não ultrapasse o contêiner */
+    max-height: 500px; /* Aumenta a altura máxima da imagem */
+    width: 400px; /* Define uma largura fixa maior */
+    height: auto; /* Mantém a proporção da imagem */
+}
+
+.textofinal{
+    color: #4D3B1F;
+    font-family: "Bebas Neue", serif;
+    margin: 10px;
+
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #f8f8f8;
+    color: white;
+}
+
+.logofooter{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+/*responsividade*/
+
+@media screen and (max-width:360px){
+    
+.doistitulodois{
+    font-size: 45px;
+    margin: 5px;
+
+}
+
+.doistitulo .doistitulotres{
+    
+    margin: 30px;
+    font-family: "Special Elite", system-ui;
+    color: #9E7A41;
+    font-weight: bold;
+
+}
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 769px) {
+    .cabeçalho {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .menu ul {
+        display: flex;
+        list-style: none;
+    }
+    .menu ul li {
+        margin: 0 15px;
+    }
+    .iconecabeçalho {
+        display: flex;
+        align-items: center;
+    }
+    .doisitaliann-line {
+        display: flex;
+    }
+    
+    /* Ajuste no tamanho das imagens, para telas grandes */
+    .pizza-image, .pizza-imagetres, .drink-image {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+/* Estilo para telas pequenas (celulares) */
+@media (max-width: 768px) {
+    /* Ajuste do cabeçalho */
+    .cabeçalho {
+        display: block;
+        text-align: center;
+        padding: 15px;
+    }
+    
+    /* Centraliza o menu e os itens */
+    .menu ul {
+        padding: 0;
+        display: block;
+        margin-top: 20px;
+    }
+    .menu ul li {
+        margin-bottom: 15px;
+    }
+
+    /* Ícones e texto do cabeçalho mais próximos */
+    .iconecabeçalho {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .iconecabeçalho .icon {
+        margin-right: 5px;
+    }
+
+    
+    /* Tamanho das imagens ajustado para celulares */
+    .pizza-image, .pizza-imagetres, .drink-image {
+        max-width: 100%;
+        height: auto;
+    }
+    
+    .textofinal h3 {
+        font-size: 14px;
+        text-align: center;
+    }
+    
+    /* Espaçamento entre o preço e a imagem */
+    .preçosum, .preçosdois, .preçostres, .preçosquatro {
+        margin-bottom: 20px;
+    }
+}
+
+/* Estilo para telas muito pequenas (exemplo: smartphones de tela muito pequena) */
+@media (max-width: 480px) {
+   
+    .iconecabeçalho .txt-link {
+        font-size: 14px;
+    }
+
+    .reserve {
+        font-size: 14px;
+    }
+
+    /* Aumenta o espaçamento entre os itens no menu */
+    .menu ul li {
+        margin-bottom: 10px;
+    }
+
+    .cabeçalho img {
+        max-width: 100px; /* Ajuste o logo para ser mais compacto */
+        margin-bottom: 10px;
+    }
+
+    /* Ajusta o espaçamento da seção de "importante" */
+    .textofinal h3 {
+        font-size: 12px;
+        padding: 0 10px;
+    }
+}
+
